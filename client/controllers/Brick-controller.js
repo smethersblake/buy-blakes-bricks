@@ -1,4 +1,4 @@
-const Brick = require("../models/Brick");
+const Brick = require("../server/models/Brick");
 
 const brickController = {
     getAllBrick (req, res)
