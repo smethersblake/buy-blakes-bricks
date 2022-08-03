@@ -1,5 +1,3 @@
-4 lines (22 sloc)  558 Bytes
-
 const Color = require('../models/Color')
 
 const colorController = {
