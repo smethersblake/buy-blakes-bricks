@@ -19,6 +19,15 @@ const brickController = {
             console.log(err);
             res.status(400).json(err)
         })
+    },
+    getBrickByColor (req, res)
+    {
+        Brick.find({'color.name': "Red"}).then(dbColorData => res.json(dbColorData))
+            .catch(err =>
+            {
+            console.log(err);
+            res.status(400).json(err)
+        })
     }
 }
 module.exports = brickController
