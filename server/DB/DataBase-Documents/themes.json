@@ -1,0 +1,3123 @@
+[{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d00f"
+  },
+  "id": 1,
+  "parent_id": null,
+  "name": "Technic"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d010"
+  },
+  "id": 3,
+  "parent_id": 1,
+  "name": "Competition"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d011"
+  },
+  "id": 4,
+  "parent_id": 1,
+  "name": "Expert Builder"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d012"
+  },
+  "id": 16,
+  "parent_id": 1,
+  "name": "RoboRiders"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d013"
+  },
+  "id": 17,
+  "parent_id": 1,
+  "name": "Speed Slammers"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d014"
+  },
+  "id": 18,
+  "parent_id": 1,
+  "name": "Star Wars"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d015"
+  },
+  "id": 19,
+  "parent_id": 1,
+  "name": "Supplemental"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d016"
+  },
+  "id": 20,
+  "parent_id": 1,
+  "name": "Throwbot Slizer"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d017"
+  },
+  "id": 21,
+  "parent_id": 1,
+  "name": "Universal Building Set"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d018"
+  },
+  "id": 22,
+  "parent_id": null,
+  "name": "Creator"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d019"
+  },
+  "id": 23,
+  "parent_id": 22,
+  "name": "Basic Model"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d01a"
+  },
+  "id": 34,
+  "parent_id": 23,
+  "name": "Building"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d01b"
+  },
+  "id": 35,
+  "parent_id": 23,
+  "name": "Cargo"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d01c"
+  },
+  "id": 50,
+  "parent_id": null,
+  "name": "Town"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d01d"
+  },
+  "id": 51,
+  "parent_id": 50,
+  "name": "Arctic"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d01e"
+  },
+  "id": 52,
+  "parent_id": null,
+  "name": "City"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d01f"
+  },
+  "id": 53,
+  "parent_id": 52,
+  "name": "Airport"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d020"
+  },
+  "id": 54,
+  "parent_id": 52,
+  "name": "Cargo"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d021"
+  },
+  "id": 55,
+  "parent_id": 52,
+  "name": "Coast Guard"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d022"
+  },
+  "id": 56,
+  "parent_id": 52,
+  "name": "Construction"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d023"
+  },
+  "id": 57,
+  "parent_id": 52,
+  "name": "Farm"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d024"
+  },
+  "id": 58,
+  "parent_id": 52,
+  "name": "Fire"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d025"
+  },
+  "id": 59,
+  "parent_id": 52,
+  "name": "Harbor"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d026"
+  },
+  "id": 60,
+  "parent_id": 52,
+  "name": "Hospital"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d027"
+  },
+  "id": 61,
+  "parent_id": 52,
+  "name": "Police"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d028"
+  },
+  "id": 63,
+  "parent_id": 52,
+  "name": "Traffic"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d029"
+  },
+  "id": 64,
+  "parent_id": 52,
+  "name": "Off-Road"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d02a"
+  },
+  "id": 65,
+  "parent_id": 52,
+  "name": "Arctic"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d02b"
+  },
+  "id": 66,
+  "parent_id": 52,
+  "name": "Trains"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d02c"
+  },
+  "id": 67,
+  "parent_id": 50,
+  "name": "Classic Town"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d02d"
+  },
+  "id": 86,
+  "parent_id": 50,
+  "name": "Divers"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d02e"
+  },
+  "id": 87,
+  "parent_id": 50,
+  "name": "Extreme Team"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d02f"
+  },
+  "id": 88,
+  "parent_id": 50,
+  "name": "Launch Command"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d030"
+  },
+  "id": 89,
+  "parent_id": 50,
+  "name": "Outback"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d031"
+  },
+  "id": 90,
+  "parent_id": 50,
+  "name": "Paradisa"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d032"
+  },
+  "id": 91,
+  "parent_id": 50,
+  "name": "Race"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d033"
+  },
+  "id": 92,
+  "parent_id": 50,
+  "name": "Res-Q"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d034"
+  },
+  "id": 93,
+  "parent_id": 50,
+  "name": "Space Port"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d035"
+  },
+  "id": 94,
+  "parent_id": 50,
+  "name": "Town Jr."
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d036"
+  },
+  "id": 104,
+  "parent_id": 50,
+  "name": "Town Plan"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d037"
+  },
+  "id": 105,
+  "parent_id": 50,
+  "name": "World City"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d038"
+  },
+  "id": 106,
+  "parent_id": 50,
+  "name": "City Center"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d039"
+  },
+  "id": 112,
+  "parent_id": null,
+  "name": "Racers"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d03a"
+  },
+  "id": 114,
+  "parent_id": 112,
+  "name": "Ferrari"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d03b"
+  },
+  "id": 118,
+  "parent_id": 112,
+  "name": "Speed Racer"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d03c"
+  },
+  "id": 122,
+  "parent_id": 112,
+  "name": "Williams F1"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d03d"
+  },
+  "id": 123,
+  "parent_id": 112,
+  "name": "World Racers"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d03e"
+  },
+  "id": 126,
+  "parent_id": null,
+  "name": "Space"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d03f"
+  },
+  "id": 127,
+  "parent_id": 126,
+  "name": "Alien Conquest"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d040"
+  },
+  "id": 128,
+  "parent_id": 126,
+  "name": "Blacktron I"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d041"
+  },
+  "id": 129,
+  "parent_id": 126,
+  "name": "Blacktron II"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d042"
+  },
+  "id": 130,
+  "parent_id": 126,
+  "name": "Classic Space"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d043"
+  },
+  "id": 131,
+  "parent_id": 126,
+  "name": "Exploriens"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d044"
+  },
+  "id": 132,
+  "parent_id": 126,
+  "name": "Futuron"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d045"
+  },
+  "id": 133,
+  "parent_id": 126,
+  "name": "Ice Planet 2002"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d046"
+  },
+  "id": 134,
+  "parent_id": 126,
+  "name": "Insectoids"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d047"
+  },
+  "id": 135,
+  "parent_id": 126,
+  "name": "Life On Mars"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d048"
+  },
+  "id": 136,
+  "parent_id": 126,
+  "name": "M:Tron"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d049"
+  },
+  "id": 137,
+  "parent_id": 126,
+  "name": "Mars Mission"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d04a"
+  },
+  "id": 138,
+  "parent_id": 126,
+  "name": "RoboForce"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d04b"
+  },
+  "id": 139,
+  "parent_id": 126,
+  "name": "Space Police I"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d04c"
+  },
+  "id": 140,
+  "parent_id": 126,
+  "name": "Space Police II"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d04d"
+  },
+  "id": 141,
+  "parent_id": 126,
+  "name": "Space Police III"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d04e"
+  },
+  "id": 142,
+  "parent_id": 126,
+  "name": "Spyrius"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d04f"
+  },
+  "id": 143,
+  "parent_id": 126,
+  "name": "Supplemental"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d050"
+  },
+  "id": 144,
+  "parent_id": 126,
+  "name": "UFO"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d051"
+  },
+  "id": 145,
+  "parent_id": 126,
+  "name": "Unitron"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d052"
+  },
+  "id": 146,
+  "parent_id": 126,
+  "name": "Galaxy Squad"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d053"
+  },
+  "id": 147,
+  "parent_id": null,
+  "name": "Pirates"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d054"
+  },
+  "id": 148,
+  "parent_id": 147,
+  "name": "Pirates I"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d055"
+  },
+  "id": 153,
+  "parent_id": 147,
+  "name": "Pirates II"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d056"
+  },
+  "id": 154,
+  "parent_id": 147,
+  "name": "Pirates III"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d057"
+  },
+  "id": 155,
+  "parent_id": null,
+  "name": "Modular Buildings"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d058"
+  },
+  "id": 156,
+  "parent_id": 155,
+  "name": "Mini"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d059"
+  },
+  "id": 157,
+  "parent_id": 155,
+  "name": "Bricktober"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d05a"
+  },
+  "id": 158,
+  "parent_id": null,
+  "name": "Star Wars"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d05b"
+  },
+  "id": 171,
+  "parent_id": 158,
+  "name": "Ultimate Collector Series"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d05c"
+  },
+  "id": 186,
+  "parent_id": null,
+  "name": "Castle"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d05d"
+  },
+  "id": 187,
+  "parent_id": 186,
+  "name": "Black Falcons"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d05e"
+  },
+  "id": 188,
+  "parent_id": 186,
+  "name": "Black Knights"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d05f"
+  },
+  "id": 189,
+  "parent_id": 186,
+  "name": "Classic Castle"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d060"
+  },
+  "id": 190,
+  "parent_id": 186,
+  "name": "Crusaders"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d061"
+  },
+  "id": 191,
+  "parent_id": 186,
+  "name": "Dark Forest"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d062"
+  },
+  "id": 193,
+  "parent_id": 186,
+  "name": "Fantasy Era"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d063"
+  },
+  "id": 194,
+  "parent_id": 186,
+  "name": "Forestmen"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d064"
+  },
+  "id": 195,
+  "parent_id": 186,
+  "name": "Fright Knights"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d065"
+  },
+  "id": 196,
+  "parent_id": 186,
+  "name": "Kingdoms"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d066"
+  },
+  "id": 197,
+  "parent_id": 186,
+  "name": "Knights Kingdom I"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d067"
+  },
+  "id": 198,
+  "parent_id": 186,
+  "name": "Knights Kingdom II"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d068"
+  },
+  "id": 199,
+  "parent_id": 186,
+  "name": "Lion Knights"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d069"
+  },
+  "id": 201,
+  "parent_id": 186,
+  "name": "Royal Knights"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d06a"
+  },
+  "id": 202,
+  "parent_id": 186,
+  "name": "Supplemental"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d06b"
+  },
+  "id": 203,
+  "parent_id": 186,
+  "name": "Wolfpack"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d06c"
+  },
+  "id": 204,
+  "parent_id": null,
+  "name": "Designer Sets"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d06d"
+  },
+  "id": 206,
+  "parent_id": null,
+  "name": "Seasonal"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d06e"
+  },
+  "id": 207,
+  "parent_id": 206,
+  "name": "Advent"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d06f"
+  },
+  "id": 208,
+  "parent_id": 207,
+  "name": "City"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d070"
+  },
+  "id": 209,
+  "parent_id": 207,
+  "name": "Star Wars"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d071"
+  },
+  "id": 210,
+  "parent_id": 207,
+  "name": "Belville"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d072"
+  },
+  "id": 211,
+  "parent_id": 207,
+  "name": "Castle"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d073"
+  },
+  "id": 212,
+  "parent_id": 207,
+  "name": "Classic Basic"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d074"
+  },
+  "id": 213,
+  "parent_id": 207,
+  "name": "Clikits"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d075"
+  },
+  "id": 214,
+  "parent_id": 207,
+  "name": "Creator"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d076"
+  },
+  "id": 215,
+  "parent_id": 207,
+  "name": "Pirates"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d077"
+  },
+  "id": 216,
+  "parent_id": 207,
+  "name": "Friends"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d078"
+  },
+  "id": 227,
+  "parent_id": 206,
+  "name": "Christmas"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d079"
+  },
+  "id": 228,
+  "parent_id": 227,
+  "name": "Creator"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d07a"
+  },
+  "id": 229,
+  "parent_id": 206,
+  "name": "Easter"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d07b"
+  },
+  "id": 230,
+  "parent_id": 206,
+  "name": "Halloween"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d07c"
+  },
+  "id": 231,
+  "parent_id": 206,
+  "name": "Thanksgiving"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d07d"
+  },
+  "id": 232,
+  "parent_id": 206,
+  "name": "Valentine"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d07e"
+  },
+  "id": 233,
+  "parent_id": null,
+  "name": "Train"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d07f"
+  },
+  "id": 234,
+  "parent_id": 233,
+  "name": "12V"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d080"
+  },
+  "id": 235,
+  "parent_id": 233,
+  "name": "4.5V"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d081"
+  },
+  "id": 236,
+  "parent_id": 233,
+  "name": "9V"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d082"
+  },
+  "id": 240,
+  "parent_id": 233,
+  "name": "RC Train"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d083"
+  },
+  "id": 241,
+  "parent_id": 233,
+  "name": "Supplemental"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d084"
+  },
+  "id": 246,
+  "parent_id": null,
+  "name": "Harry Potter"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d085"
+  },
+  "id": 252,
+  "parent_id": null,
+  "name": "Architecture"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d086"
+  },
+  "id": 253,
+  "parent_id": 252,
+  "name": "Skylines"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d087"
+  },
+  "id": 254,
+  "parent_id": null,
+  "name": "Bulk Bricks"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d088"
+  },
+  "id": 255,
+  "parent_id": 254,
+  "name": "Castle"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d089"
+  },
+  "id": 256,
+  "parent_id": 254,
+  "name": "Technic"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d08a"
+  },
+  "id": 257,
+  "parent_id": 254,
+  "name": "Train"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d08b"
+  },
+  "id": 258,
+  "parent_id": null,
+  "name": "Mindstorms"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d08c"
+  },
+  "id": 259,
+  "parent_id": 258,
+  "name": "NXT"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d08d"
+  },
+  "id": 260,
+  "parent_id": 258,
+  "name": "RCX"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d08e"
+  },
+  "id": 261,
+  "parent_id": 258,
+  "name": "Star Wars"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d08f"
+  },
+  "id": 262,
+  "parent_id": 258,
+  "name": "EV3"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d090"
+  },
+  "id": 263,
+  "parent_id": null,
+  "name": "Pirates of the Caribbean"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d091"
+  },
+  "id": 264,
+  "parent_id": null,
+  "name": "Indiana Jones"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d092"
+  },
+  "id": 269,
+  "parent_id": null,
+  "name": "Cars"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d093"
+  },
+  "id": 270,
+  "parent_id": null,
+  "name": "Ben 10"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d094"
+  },
+  "id": 271,
+  "parent_id": null,
+  "name": "Prince of Persia"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d095"
+  },
+  "id": 272,
+  "parent_id": null,
+  "name": "SpongeBob SquarePants"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d096"
+  },
+  "id": 273,
+  "parent_id": null,
+  "name": "Studios"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d097"
+  },
+  "id": 274,
+  "parent_id": 273,
+  "name": "Jurassic Park III"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d098"
+  },
+  "id": 275,
+  "parent_id": null,
+  "name": "Toy Story"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d099"
+  },
+  "id": 276,
+  "parent_id": null,
+  "name": "Sculptures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d09a"
+  },
+  "id": 277,
+  "parent_id": 276,
+  "name": "Mosaic"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d09b"
+  },
+  "id": 278,
+  "parent_id": null,
+  "name": "Model Team"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d09c"
+  },
+  "id": 279,
+  "parent_id": null,
+  "name": "4 Juniors"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d09d"
+  },
+  "id": 280,
+  "parent_id": 279,
+  "name": "Jack Stone"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d09e"
+  },
+  "id": 287,
+  "parent_id": 279,
+  "name": "Spider-Man"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d09f"
+  },
+  "id": 296,
+  "parent_id": null,
+  "name": "Adventurers"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0a0"
+  },
+  "id": 297,
+  "parent_id": 296,
+  "name": "Desert"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0a1"
+  },
+  "id": 298,
+  "parent_id": 296,
+  "name": "Dino Island"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0a2"
+  },
+  "id": 299,
+  "parent_id": 296,
+  "name": "Jungle"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0a3"
+  },
+  "id": 300,
+  "parent_id": 296,
+  "name": "Orient Expedition"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0a4"
+  },
+  "id": 301,
+  "parent_id": null,
+  "name": "Other"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0a5"
+  },
+  "id": 302,
+  "parent_id": null,
+  "name": "Agents"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0a6"
+  },
+  "id": 303,
+  "parent_id": 302,
+  "name": "Ultra Agents"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0a7"
+  },
+  "id": 304,
+  "parent_id": null,
+  "name": "Alpha Team"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0a8"
+  },
+  "id": 305,
+  "parent_id": 304,
+  "name": "Mission Deep Sea"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0a9"
+  },
+  "id": 306,
+  "parent_id": 304,
+  "name": "Mission Deep Freeze"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0aa"
+  },
+  "id": 307,
+  "parent_id": null,
+  "name": "Aquazone"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0ab"
+  },
+  "id": 308,
+  "parent_id": 307,
+  "name": "Aquanauts"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0ac"
+  },
+  "id": 309,
+  "parent_id": 307,
+  "name": "Aquaraiders I"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0ad"
+  },
+  "id": 310,
+  "parent_id": 307,
+  "name": "Aquaraiders II"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0ae"
+  },
+  "id": 311,
+  "parent_id": 307,
+  "name": "Aquasharks"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0af"
+  },
+  "id": 312,
+  "parent_id": 307,
+  "name": "Hydronauts"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0b0"
+  },
+  "id": 313,
+  "parent_id": 307,
+  "name": "Stingrays"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0b1"
+  },
+  "id": 315,
+  "parent_id": null,
+  "name": "Atlantis"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0b2"
+  },
+  "id": 317,
+  "parent_id": null,
+  "name": "Avatar: The Last Airbender"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0b3"
+  },
+  "id": 318,
+  "parent_id": null,
+  "name": "Belville"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0b4"
+  },
+  "id": 324,
+  "parent_id": null,
+  "name": "Bionicle"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0b5"
+  },
+  "id": 341,
+  "parent_id": 324,
+  "name": "Playsets"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0b6"
+  },
+  "id": 360,
+  "parent_id": 324,
+  "name": "Protectors"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0b7"
+  },
+  "id": 363,
+  "parent_id": null,
+  "name": "Boat"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0b8"
+  },
+  "id": 364,
+  "parent_id": null,
+  "name": "Building Set with People"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0b9"
+  },
+  "id": 365,
+  "parent_id": null,
+  "name": "System"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0ba"
+  },
+  "id": 366,
+  "parent_id": 365,
+  "name": "Basic Set"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0bb"
+  },
+  "id": 367,
+  "parent_id": 365,
+  "name": "Building"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0bc"
+  },
+  "id": 368,
+  "parent_id": 365,
+  "name": "HO 1:87 Vehicles"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0bd"
+  },
+  "id": 369,
+  "parent_id": 365,
+  "name": "Jumbo Bricks"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0be"
+  },
+  "id": 371,
+  "parent_id": 365,
+  "name": "Supplemental"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0bf"
+  },
+  "id": 372,
+  "parent_id": 365,
+  "name": "Town Plan"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0c0"
+  },
+  "id": 373,
+  "parent_id": 365,
+  "name": "Vehicle"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0c1"
+  },
+  "id": 384,
+  "parent_id": null,
+  "name": "Dino 2010"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0c2"
+  },
+  "id": 385,
+  "parent_id": null,
+  "name": "Dino Attack"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0c3"
+  },
+  "id": 386,
+  "parent_id": null,
+  "name": "Dinosaurs"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0c4"
+  },
+  "id": 387,
+  "parent_id": null,
+  "name": "Discovery"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0c5"
+  },
+  "id": 388,
+  "parent_id": null,
+  "name": "Disney's Mickey Mouse"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0c6"
+  },
+  "id": 389,
+  "parent_id": null,
+  "name": "Exo-Force"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0c7"
+  },
+  "id": 390,
+  "parent_id": null,
+  "name": "Fabuland"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0c8"
+  },
+  "id": 397,
+  "parent_id": null,
+  "name": "Factory"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0c9"
+  },
+  "id": 398,
+  "parent_id": null,
+  "name": "FIRST LEGO League"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0ca"
+  },
+  "id": 399,
+  "parent_id": null,
+  "name": "Freestyle"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0cb"
+  },
+  "id": 400,
+  "parent_id": null,
+  "name": "Hero Factory"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0cc"
+  },
+  "id": 401,
+  "parent_id": 400,
+  "name": "Heroes"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0cd"
+  },
+  "id": 403,
+  "parent_id": 400,
+  "name": "Villains"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0ce"
+  },
+  "id": 404,
+  "parent_id": null,
+  "name": "Hobby Sets"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0cf"
+  },
+  "id": 405,
+  "parent_id": null,
+  "name": "Homemaker"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0d0"
+  },
+  "id": 406,
+  "parent_id": null,
+  "name": "Inventor"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0d1"
+  },
+  "id": 407,
+  "parent_id": null,
+  "name": "Island Xtreme Stunts"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0d2"
+  },
+  "id": 408,
+  "parent_id": null,
+  "name": "LEGO Brand Store"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0d3"
+  },
+  "id": 409,
+  "parent_id": 408,
+  "name": "Monthly Mini Model Build"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0d4"
+  },
+  "id": 410,
+  "parent_id": 408,
+  "name": "Pick A Model"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0d5"
+  },
+  "id": 411,
+  "parent_id": null,
+  "name": "Legoland"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0d6"
+  },
+  "id": 412,
+  "parent_id": 411,
+  "name": "Airport"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0d7"
+  },
+  "id": 413,
+  "parent_id": 411,
+  "name": "Building"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0d8"
+  },
+  "id": 414,
+  "parent_id": 411,
+  "name": "Castle"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0d9"
+  },
+  "id": 415,
+  "parent_id": 411,
+  "name": "Coast Guard"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0da"
+  },
+  "id": 416,
+  "parent_id": 411,
+  "name": "Construction"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0db"
+  },
+  "id": 417,
+  "parent_id": 411,
+  "name": "Fire"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0dc"
+  },
+  "id": 418,
+  "parent_id": 411,
+  "name": "Gas Station"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0dd"
+  },
+  "id": 419,
+  "parent_id": 411,
+  "name": "Harbor"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0de"
+  },
+  "id": 420,
+  "parent_id": 411,
+  "name": "Hospital"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0df"
+  },
+  "id": 421,
+  "parent_id": 411,
+  "name": "Police"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0e0"
+  },
+  "id": 422,
+  "parent_id": 411,
+  "name": "Space"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0e1"
+  },
+  "id": 423,
+  "parent_id": 411,
+  "name": "Vehicle"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0e2"
+  },
+  "id": 424,
+  "parent_id": 411,
+  "name": "Western"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0e3"
+  },
+  "id": 425,
+  "parent_id": null,
+  "name": "Legoland Parks"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0e4"
+  },
+  "id": 432,
+  "parent_id": null,
+  "name": "Master Builder Academy"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0e5"
+  },
+  "id": 433,
+  "parent_id": null,
+  "name": "Minitalia"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0e6"
+  },
+  "id": 434,
+  "parent_id": null,
+  "name": "Ninja"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0e7"
+  },
+  "id": 435,
+  "parent_id": null,
+  "name": "Ninjago"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0e8"
+  },
+  "id": 437,
+  "parent_id": null,
+  "name": "Pharaoh's Quest"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0e9"
+  },
+  "id": 438,
+  "parent_id": null,
+  "name": "Power Functions"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0ea"
+  },
+  "id": 439,
+  "parent_id": null,
+  "name": "Power Miners"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0eb"
+  },
+  "id": 440,
+  "parent_id": null,
+  "name": "Primo"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0ec"
+  },
+  "id": 441,
+  "parent_id": null,
+  "name": "Quatro"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0ed"
+  },
+  "id": 442,
+  "parent_id": null,
+  "name": "Rock Raiders"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0ee"
+  },
+  "id": 443,
+  "parent_id": null,
+  "name": "Service Packs"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0ef"
+  },
+  "id": 448,
+  "parent_id": 443,
+  "name": "Fabuland"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0f0"
+  },
+  "id": 453,
+  "parent_id": 443,
+  "name": "Technic"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0f1"
+  },
+  "id": 456,
+  "parent_id": 443,
+  "name": "Train"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0f2"
+  },
+  "id": 458,
+  "parent_id": null,
+  "name": "Sports"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0f3"
+  },
+  "id": 459,
+  "parent_id": 458,
+  "name": "Basketball"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0f4"
+  },
+  "id": 460,
+  "parent_id": 458,
+  "name": "Gravity Games"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0f5"
+  },
+  "id": 461,
+  "parent_id": 458,
+  "name": "Hockey"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0f6"
+  },
+  "id": 462,
+  "parent_id": 458,
+  "name": "Soccer"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0f7"
+  },
+  "id": 463,
+  "parent_id": null,
+  "name": "Spybotics"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0f8"
+  },
+  "id": 464,
+  "parent_id": null,
+  "name": "Time Cruisers"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0f9"
+  },
+  "id": 465,
+  "parent_id": null,
+  "name": "Universal Building Set"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0fa"
+  },
+  "id": 466,
+  "parent_id": 465,
+  "name": "Airport"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0fb"
+  },
+  "id": 467,
+  "parent_id": 465,
+  "name": "Basic"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0fc"
+  },
+  "id": 468,
+  "parent_id": 465,
+  "name": "Basic Model"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0fd"
+  },
+  "id": 469,
+  "parent_id": 465,
+  "name": "Basic Set"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0fe"
+  },
+  "id": 470,
+  "parent_id": 465,
+  "name": "Classic Basic"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d0ff"
+  },
+  "id": 471,
+  "parent_id": 465,
+  "name": "Ferries"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d100"
+  },
+  "id": 472,
+  "parent_id": 465,
+  "name": "Gears"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d101"
+  },
+  "id": 473,
+  "parent_id": 465,
+  "name": "Supplemental"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d102"
+  },
+  "id": 474,
+  "parent_id": null,
+  "name": "Vikings"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d103"
+  },
+  "id": 475,
+  "parent_id": null,
+  "name": "Western"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d104"
+  },
+  "id": 478,
+  "parent_id": null,
+  "name": "X-Pod"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d105"
+  },
+  "id": 480,
+  "parent_id": null,
+  "name": "Znap"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d106"
+  },
+  "id": 481,
+  "parent_id": null,
+  "name": "Dino"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d107"
+  },
+  "id": 494,
+  "parent_id": null,
+  "name": "Friends"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d108"
+  },
+  "id": 497,
+  "parent_id": null,
+  "name": "Books"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d109"
+  },
+  "id": 498,
+  "parent_id": 497,
+  "name": "Technic"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d10a"
+  },
+  "id": 500,
+  "parent_id": null,
+  "name": "Clikits"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d10b"
+  },
+  "id": 501,
+  "parent_id": null,
+  "name": "Gear"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d10c"
+  },
+  "id": 502,
+  "parent_id": null,
+  "name": "Games"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d10d"
+  },
+  "id": 503,
+  "parent_id": 501,
+  "name": "Key Chain"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d10e"
+  },
+  "id": 504,
+  "parent_id": null,
+  "name": "Duplo"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d10f"
+  },
+  "id": 505,
+  "parent_id": 504,
+  "name": "Basic Set"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d110"
+  },
+  "id": 506,
+  "parent_id": 504,
+  "name": "Cars"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d111"
+  },
+  "id": 507,
+  "parent_id": null,
+  "name": "Educational and Dacta"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d112"
+  },
+  "id": 509,
+  "parent_id": 507,
+  "name": "Adventurers"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d113"
+  },
+  "id": 510,
+  "parent_id": 507,
+  "name": "Boat"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d114"
+  },
+  "id": 511,
+  "parent_id": 507,
+  "name": "Building Set with People"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d115"
+  },
+  "id": 512,
+  "parent_id": 507,
+  "name": "Castle"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d116"
+  },
+  "id": 513,
+  "parent_id": 507,
+  "name": "Classic"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d117"
+  },
+  "id": 514,
+  "parent_id": 507,
+  "name": "Creator"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d118"
+  },
+  "id": 515,
+  "parent_id": 507,
+  "name": "Dinosaurs"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d119"
+  },
+  "id": 516,
+  "parent_id": 507,
+  "name": "Duplo and Explore"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d11a"
+  },
+  "id": 517,
+  "parent_id": 507,
+  "name": "Learning"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d11b"
+  },
+  "id": 518,
+  "parent_id": 507,
+  "name": "Mindstorms"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d11c"
+  },
+  "id": 519,
+  "parent_id": 518,
+  "name": "NXT"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d11d"
+  },
+  "id": 520,
+  "parent_id": 518,
+  "name": "RCX"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d11e"
+  },
+  "id": 521,
+  "parent_id": 518,
+  "name": "WeDo"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d11f"
+  },
+  "id": 523,
+  "parent_id": 507,
+  "name": "Samsonite"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d120"
+  },
+  "id": 524,
+  "parent_id": 507,
+  "name": "Service Packs"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d121"
+  },
+  "id": 525,
+  "parent_id": 524,
+  "name": "Technic"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d122"
+  },
+  "id": 526,
+  "parent_id": 507,
+  "name": "Soft Bricks"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d123"
+  },
+  "id": 527,
+  "parent_id": 507,
+  "name": "Space"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d124"
+  },
+  "id": 528,
+  "parent_id": 507,
+  "name": "Supplemental"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d125"
+  },
+  "id": 529,
+  "parent_id": 507,
+  "name": "Technic"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d126"
+  },
+  "id": 530,
+  "parent_id": 529,
+  "name": "Control Lab"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d127"
+  },
+  "id": 531,
+  "parent_id": 529,
+  "name": "eLAB"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d128"
+  },
+  "id": 532,
+  "parent_id": 529,
+  "name": "Supplemental"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d129"
+  },
+  "id": 533,
+  "parent_id": 507,
+  "name": "Town"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d12a"
+  },
+  "id": 534,
+  "parent_id": 507,
+  "name": "Universal Building Set"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d12b"
+  },
+  "id": 535,
+  "parent_id": null,
+  "name": "Collectible Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d12c"
+  },
+  "id": 536,
+  "parent_id": 535,
+  "name": "Series 1 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d12d"
+  },
+  "id": 537,
+  "parent_id": 535,
+  "name": "Series 2 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d12e"
+  },
+  "id": 538,
+  "parent_id": 535,
+  "name": "Series 3 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d12f"
+  },
+  "id": 539,
+  "parent_id": 535,
+  "name": "Series 4 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d130"
+  },
+  "id": 540,
+  "parent_id": 535,
+  "name": "Series 5 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d131"
+  },
+  "id": 541,
+  "parent_id": 535,
+  "name": "Series 6 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d132"
+  },
+  "id": 542,
+  "parent_id": 535,
+  "name": "Series 7 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d133"
+  },
+  "id": 543,
+  "parent_id": 535,
+  "name": "Series 8 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d134"
+  },
+  "id": 544,
+  "parent_id": 535,
+  "name": "Series 9 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d135"
+  },
+  "id": 545,
+  "parent_id": 535,
+  "name": "Series 10 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d136"
+  },
+  "id": 546,
+  "parent_id": 535,
+  "name": "Team GB"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d137"
+  },
+  "id": 547,
+  "parent_id": 535,
+  "name": "Series 11 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d138"
+  },
+  "id": 548,
+  "parent_id": 535,
+  "name": "Series 12 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d139"
+  },
+  "id": 549,
+  "parent_id": 535,
+  "name": "The LEGO Movie"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d13a"
+  },
+  "id": 550,
+  "parent_id": 535,
+  "name": "The Simpsons Series 1"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d13b"
+  },
+  "id": 551,
+  "parent_id": 535,
+  "name": "Series 13 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d13c"
+  },
+  "id": 552,
+  "parent_id": 535,
+  "name": "Series 14 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d13d"
+  },
+  "id": 553,
+  "parent_id": 535,
+  "name": "The Simpsons Series 2"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d13e"
+  },
+  "id": 554,
+  "parent_id": 535,
+  "name": "Series 15 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d13f"
+  },
+  "id": 555,
+  "parent_id": 535,
+  "name": "Disney Series 1"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d140"
+  },
+  "id": 556,
+  "parent_id": 535,
+  "name": "Series 16 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d141"
+  },
+  "id": 557,
+  "parent_id": 535,
+  "name": "DFB Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d142"
+  },
+  "id": 558,
+  "parent_id": null,
+  "name": "Monster Fighters"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d143"
+  },
+  "id": 559,
+  "parent_id": null,
+  "name": "Value Packs"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d144"
+  },
+  "id": 560,
+  "parent_id": null,
+  "name": "Universe"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d145"
+  },
+  "id": 561,
+  "parent_id": null,
+  "name": "The Hobbit and Lord of the Rings"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d146"
+  },
+  "id": 562,
+  "parent_id": 561,
+  "name": "The Hobbit"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d147"
+  },
+  "id": 566,
+  "parent_id": 561,
+  "name": "The Lord of the Rings"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d148"
+  },
+  "id": 570,
+  "parent_id": null,
+  "name": "Teenage Mutant Ninja Turtles"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d149"
+  },
+  "id": 571,
+  "parent_id": null,
+  "name": "Legends of Chima"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d14a"
+  },
+  "id": 572,
+  "parent_id": 571,
+  "name": "Speedorz"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d14b"
+  },
+  "id": 573,
+  "parent_id": 571,
+  "name": "Constraction"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d14c"
+  },
+  "id": 575,
+  "parent_id": null,
+  "name": "The Lone Ranger"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d14d"
+  },
+  "id": 576,
+  "parent_id": null,
+  "name": "LEGO Ideas and CUUSOO"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d14e"
+  },
+  "id": 577,
+  "parent_id": null,
+  "name": "Minecraft"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d14f"
+  },
+  "id": 578,
+  "parent_id": null,
+  "name": "The LEGO Movie"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d150"
+  },
+  "id": 579,
+  "parent_id": null,
+  "name": "Disney Princess"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d151"
+  },
+  "id": 580,
+  "parent_id": null,
+  "name": "Mixels"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d152"
+  },
+  "id": 590,
+  "parent_id": null,
+  "name": "Fusion"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d153"
+  },
+  "id": 591,
+  "parent_id": null,
+  "name": "Juniors"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d154"
+  },
+  "id": 592,
+  "parent_id": 591,
+  "name": "DC Comics Super Heroes"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d155"
+  },
+  "id": 593,
+  "parent_id": 591,
+  "name": "Disney Princess"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d156"
+  },
+  "id": 595,
+  "parent_id": 591,
+  "name": "Friends"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d157"
+  },
+  "id": 596,
+  "parent_id": 591,
+  "name": "Marvel Super Heroes"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d158"
+  },
+  "id": 597,
+  "parent_id": 591,
+  "name": "Ninjago"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d159"
+  },
+  "id": 598,
+  "parent_id": null,
+  "name": "Promotional"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d15a"
+  },
+  "id": 599,
+  "parent_id": null,
+  "name": "LEGO Exclusive"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d15b"
+  },
+  "id": 600,
+  "parent_id": null,
+  "name": "Elves"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d15c"
+  },
+  "id": 601,
+  "parent_id": null,
+  "name": "Speed Champions"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d15d"
+  },
+  "id": 602,
+  "parent_id": null,
+  "name": "Jurassic World"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d15e"
+  },
+  "id": 603,
+  "parent_id": null,
+  "name": "Scooby-Doo"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d15f"
+  },
+  "id": 604,
+  "parent_id": null,
+  "name": "Dimensions"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d160"
+  },
+  "id": 605,
+  "parent_id": null,
+  "name": "Nexo Knights"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d161"
+  },
+  "id": 606,
+  "parent_id": null,
+  "name": "Angry Birds"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d162"
+  },
+  "id": 607,
+  "parent_id": null,
+  "name": "Ghostbusters"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d163"
+  },
+  "id": 608,
+  "parent_id": null,
+  "name": "Disney"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d164"
+  },
+  "id": 609,
+  "parent_id": 535,
+  "name": "The LEGO Batman Movie Series 1"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d165"
+  },
+  "id": 610,
+  "parent_id": null,
+  "name": "Brickheadz"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d166"
+  },
+  "id": 611,
+  "parent_id": 535,
+  "name": "Series 17 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d167"
+  },
+  "id": 614,
+  "parent_id": 52,
+  "name": "Jungle"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d168"
+  },
+  "id": 615,
+  "parent_id": 591,
+  "name": "Cars"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d169"
+  },
+  "id": 616,
+  "parent_id": 435,
+  "name": "Ninjago The Movie"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d16a"
+  },
+  "id": 617,
+  "parent_id": null,
+  "name": "DC Super Hero Girls"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d16b"
+  },
+  "id": 618,
+  "parent_id": 535,
+  "name": "Ninjago The Movie"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d16c"
+  },
+  "id": 619,
+  "parent_id": 408,
+  "name": "Cities of Wonders"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d16d"
+  },
+  "id": 620,
+  "parent_id": 591,
+  "name": "Jurassic World: Fallen Kingdom"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d16e"
+  },
+  "id": 621,
+  "parent_id": null,
+  "name": "Classic"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d16f"
+  },
+  "id": 622,
+  "parent_id": 535,
+  "name": "Series 18 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d170"
+  },
+  "id": 625,
+  "parent_id": null,
+  "name": "Unikitty!"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d171"
+  },
+  "id": 626,
+  "parent_id": 504,
+  "name": "Bob the Builder"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d172"
+  },
+  "id": 627,
+  "parent_id": 504,
+  "name": "Disney Planes"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d173"
+  },
+  "id": 628,
+  "parent_id": 504,
+  "name": "Dora the Explorer"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d174"
+  },
+  "id": 629,
+  "parent_id": 504,
+  "name": "Miles From Tomorrowland"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d175"
+  },
+  "id": 630,
+  "parent_id": 504,
+  "name": "Spiderman"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d176"
+  },
+  "id": 631,
+  "parent_id": 504,
+  "name": "Thomas & Friends"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d177"
+  },
+  "id": 632,
+  "parent_id": 504,
+  "name": "Town"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d178"
+  },
+  "id": 633,
+  "parent_id": 504,
+  "name": "Toy Story"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d179"
+  },
+  "id": 634,
+  "parent_id": 504,
+  "name": "Trains"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d17a"
+  },
+  "id": 635,
+  "parent_id": 504,
+  "name": "Winnie the Pooh"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d17b"
+  },
+  "id": 636,
+  "parent_id": 632,
+  "name": "My Town"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d17c"
+  },
+  "id": 638,
+  "parent_id": 504,
+  "name": "Jake and the Never Land Pirates"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d17d"
+  },
+  "id": 639,
+  "parent_id": 504,
+  "name": "Sofia the First"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d17e"
+  },
+  "id": 640,
+  "parent_id": 504,
+  "name": "Disney Princess"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d17f"
+  },
+  "id": 641,
+  "parent_id": 504,
+  "name": "Disney's Mickey Mouse"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d180"
+  },
+  "id": 646,
+  "parent_id": null,
+  "name": "Xtra"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d181"
+  },
+  "id": 647,
+  "parent_id": 504,
+  "name": "Castle"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d182"
+  },
+  "id": 648,
+  "parent_id": 504,
+  "name": "Doc McStuffins"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d183"
+  },
+  "id": 650,
+  "parent_id": 632,
+  "name": "Legoville"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d184"
+  },
+  "id": 651,
+  "parent_id": 504,
+  "name": "Pirates"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d185"
+  },
+  "id": 652,
+  "parent_id": 504,
+  "name": "Playhouse"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d186"
+  },
+  "id": 653,
+  "parent_id": 504,
+  "name": "DC Comics"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d187"
+  },
+  "id": 654,
+  "parent_id": null,
+  "name": "The Powerpuff Girls"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d188"
+  },
+  "id": 655,
+  "parent_id": 438,
+  "name": "Powered Up"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d189"
+  },
+  "id": 656,
+  "parent_id": 535,
+  "name": "Harry Potter and Fantastic Beasts Series 1"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d18a"
+  },
+  "id": 657,
+  "parent_id": 504,
+  "name": "Action Wheelers"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d18b"
+  },
+  "id": 658,
+  "parent_id": 504,
+  "name": "Dino"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d18c"
+  },
+  "id": 659,
+  "parent_id": 504,
+  "name": "Dolls"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d18d"
+  },
+  "id": 660,
+  "parent_id": 504,
+  "name": "Little Forest Friends"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d18e"
+  },
+  "id": 661,
+  "parent_id": 504,
+  "name": "Little Robots"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d18f"
+  },
+  "id": 662,
+  "parent_id": 504,
+  "name": "Princess Castle"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d190"
+  },
+  "id": 663,
+  "parent_id": 504,
+  "name": "Rattles"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d191"
+  },
+  "id": 664,
+  "parent_id": 504,
+  "name": "Toolo"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d192"
+  },
+  "id": 665,
+  "parent_id": 504,
+  "name": "Western"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d193"
+  },
+  "id": 666,
+  "parent_id": 504,
+  "name": "Zooters"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d194"
+  },
+  "id": 667,
+  "parent_id": 246,
+  "name": "Fantastic Beasts"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d195"
+  },
+  "id": 668,
+  "parent_id": null,
+  "name": "Scala"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d196"
+  },
+  "id": 669,
+  "parent_id": null,
+  "name": "Overwatch"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d197"
+  },
+  "id": 670,
+  "parent_id": 578,
+  "name": "The LEGO Movie II"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d198"
+  },
+  "id": 671,
+  "parent_id": null,
+  "name": "Forma"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d199"
+  },
+  "id": 672,
+  "parent_id": 22,
+  "name": "Creator 3-in-1"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d19a"
+  },
+  "id": 673,
+  "parent_id": 22,
+  "name": "Creator Expert"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d19b"
+  },
+  "id": 674,
+  "parent_id": 22,
+  "name": "Early Creator"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d19c"
+  },
+  "id": 675,
+  "parent_id": 535,
+  "name": "The LEGO Movie II"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d19d"
+  },
+  "id": 676,
+  "parent_id": null,
+  "name": "Hidden Side"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d19e"
+  },
+  "id": 677,
+  "parent_id": 535,
+  "name": "Disney Series 2"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d19f"
+  },
+  "id": 679,
+  "parent_id": 52,
+  "name": "Mars Exploration"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1a0"
+  },
+  "id": 680,
+  "parent_id": null,
+  "name": "Stranger Things"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1a1"
+  },
+  "id": 681,
+  "parent_id": 535,
+  "name": "Series 19 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1a2"
+  },
+  "id": 682,
+  "parent_id": null,
+  "name": "Trolls: World Tour"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1a3"
+  },
+  "id": 683,
+  "parent_id": null,
+  "name": "LEGO Originals"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1a4"
+  },
+  "id": 684,
+  "parent_id": 535,
+  "name": "DC Super Heroes"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1a5"
+  },
+  "id": 685,
+  "parent_id": null,
+  "name": "Galidor"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1a6"
+  },
+  "id": 686,
+  "parent_id": null,
+  "name": "Chinese Traditional Festivals"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1a7"
+  },
+  "id": 687,
+  "parent_id": 608,
+  "name": "Frozen"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1a8"
+  },
+  "id": 688,
+  "parent_id": null,
+  "name": "DOTS"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1a9"
+  },
+  "id": 689,
+  "parent_id": null,
+  "name": "Minions"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1aa"
+  },
+  "id": 690,
+  "parent_id": null,
+  "name": "Super Mario"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1ab"
+  },
+  "id": 691,
+  "parent_id": 535,
+  "name": "Harry Potter and Fantastic Beasts Series 2"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1ac"
+  },
+  "id": 692,
+  "parent_id": 535,
+  "name": "Series 20 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1ad"
+  },
+  "id": 693,
+  "parent_id": null,
+  "name": "Monkie Kid"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1ae"
+  },
+  "id": 694,
+  "parent_id": null,
+  "name": "Brick Sketches"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1af"
+  },
+  "id": 695,
+  "parent_id": null,
+  "name": "Super Heroes DC"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1b0"
+  },
+  "id": 696,
+  "parent_id": null,
+  "name": "Super Heroes Marvel"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1b1"
+  },
+  "id": 697,
+  "parent_id": 695,
+  "name": "Batman"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1b2"
+  },
+  "id": 698,
+  "parent_id": 697,
+  "name": "UCS"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1b3"
+  },
+  "id": 699,
+  "parent_id": 695,
+  "name": "Constraction"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1b4"
+  },
+  "id": 700,
+  "parent_id": 695,
+  "name": "Justice League"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1b5"
+  },
+  "id": 701,
+  "parent_id": 695,
+  "name": "Superman"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1b6"
+  },
+  "id": 702,
+  "parent_id": 696,
+  "name": "Avengers"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1b7"
+  },
+  "id": 703,
+  "parent_id": 696,
+  "name": "Constraction"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1b8"
+  },
+  "id": 704,
+  "parent_id": 696,
+  "name": "Guardians of the Galaxy"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1b9"
+  },
+  "id": 705,
+  "parent_id": 696,
+  "name": "Iron Man"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1ba"
+  },
+  "id": 706,
+  "parent_id": 696,
+  "name": "Spider-Man"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1bb"
+  },
+  "id": 707,
+  "parent_id": 696,
+  "name": "X-Men"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1bc"
+  },
+  "id": 708,
+  "parent_id": 697,
+  "name": "The LEGO Batman Movie"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1bd"
+  },
+  "id": 709,
+  "parent_id": null,
+  "name": "LEGO Art"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1be"
+  },
+  "id": 710,
+  "parent_id": 207,
+  "name": "Harry Potter"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1bf"
+  },
+  "id": 711,
+  "parent_id": 535,
+  "name": "The LEGO Batman Movie Series 2"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1c0"
+  },
+  "id": 712,
+  "parent_id": 535,
+  "name": "Series 21 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1c1"
+  },
+  "id": 713,
+  "parent_id": null,
+  "name": "VIDIYO"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1c2"
+  },
+  "id": 714,
+  "parent_id": 535,
+  "name": "Looney Tunes"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1c3"
+  },
+  "id": 715,
+  "parent_id": 535,
+  "name": "Marvel"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1c4"
+  },
+  "id": 716,
+  "parent_id": null,
+  "name": "Modulex"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1c5"
+  },
+  "id": 717,
+  "parent_id": null,
+  "name": "Speed Racer"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1c6"
+  },
+  "id": 718,
+  "parent_id": 535,
+  "name": "Series 22 Minifigures"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1c7"
+  },
+  "id": 719,
+  "parent_id": null,
+  "name": "BrickLink Designer Program"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1c8"
+  },
+  "id": 720,
+  "parent_id": 535,
+  "name": "The Muppets"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1c9"
+  },
+  "id": 721,
+  "parent_id": null,
+  "name": "Icons"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1ca"
+  },
+  "id": 722,
+  "parent_id": 504,
+  "name": "Jurassic World"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1cb"
+  },
+  "id": 724,
+  "parent_id": null,
+  "name": "Avatar"
+},{
+  "_id": {
+    "$oid": "62ddb481db1bb342a513d1cc"
+  },
+  "id": 725,
+  "parent_id": 535,
+  "name": "Series 23 Minifigures"
+}]
