@@ -1,4 +1,4 @@
-const { getAllBrick, getBrickByPartNumber, getBrickByColor } = require('../../controllers/Brick-controller')
+const { getAllBrick, getBrickByPartNumber, getBrickByColor, getBrickByCategory } = require('../../controllers/Brick-controller')
 
 const router = require('express').Router()
 
@@ -14,7 +14,9 @@ router
     .route('/color')
     .get(getBrickByColor)
 
-
+router
+    .route('/category/:name')
+    .get(getBrickByCategory)
 
     module.exports = router
     
