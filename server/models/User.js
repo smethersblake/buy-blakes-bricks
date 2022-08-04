@@ -30,11 +30,6 @@ const userSchema = new Schema({
         type: String,
         required: true,
         unique: false
-    },
-    // future admin access to edit inventory //
-    accessLevel: {
-        type: String,
-        default: "User"
     }
 })
 
