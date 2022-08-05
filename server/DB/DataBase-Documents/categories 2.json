@@ -1,0 +1,463 @@
+[{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc5f"
+  },
+  "id": 1,
+  "name": "Baseplates",
+  "part_count": 238
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc60"
+  },
+  "id": 3,
+  "name": "Bricks Sloped",
+  "part_count": 533
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc61"
+  },
+  "id": 4,
+  "name": "Duplo, Quatro and Primo",
+  "part_count": 4333
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc62"
+  },
+  "id": 5,
+  "name": "Bricks Special",
+  "part_count": 169
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc63"
+  },
+  "id": 6,
+  "name": "Bricks Wedged",
+  "part_count": 263
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc64"
+  },
+  "id": 7,
+  "name": "Containers",
+  "part_count": 180
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc65"
+  },
+  "id": 8,
+  "name": "Technic Bricks",
+  "part_count": 28
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc66"
+  },
+  "id": 9,
+  "name": "Plates Special",
+  "part_count": 362
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc67"
+  },
+  "id": 11,
+  "name": "Bricks",
+  "part_count": 1432
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc68"
+  },
+  "id": 12,
+  "name": "Technic Connectors",
+  "part_count": 109
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc69"
+  },
+  "id": 13,
+  "name": "Minifigs",
+  "part_count": 465
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc6a"
+  },
+  "id": 14,
+  "name": "Plates",
+  "part_count": 95
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc6b"
+  },
+  "id": 15,
+  "name": "Tiles Special",
+  "part_count": 377
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc6c"
+  },
+  "id": 16,
+  "name": "Windows and Doors",
+  "part_count": 402
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc6d"
+  },
+  "id": 17,
+  "name": "Non-LEGO",
+  "part_count": 3481
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc6e"
+  },
+  "id": 18,
+  "name": "Hinges, Arms and Turntables",
+  "part_count": 240
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc6f"
+  },
+  "id": 19,
+  "name": "Tiles",
+  "part_count": 2339
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc70"
+  },
+  "id": 20,
+  "name": "Bricks Round and Cones",
+  "part_count": 402
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc71"
+  },
+  "id": 21,
+  "name": "Plates Round Curved and Dishes",
+  "part_count": 271
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc72"
+  },
+  "id": 22,
+  "name": "Pneumatics",
+  "part_count": 32
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc73"
+  },
+  "id": 23,
+  "name": "Panels",
+  "part_count": 313
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc74"
+  },
+  "id": 24,
+  "name": "Other",
+  "part_count": 104
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc75"
+  },
+  "id": 25,
+  "name": "Technic Steering, Suspension and Engine",
+  "part_count": 103
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc76"
+  },
+  "id": 26,
+  "name": "Technic Special",
+  "part_count": 199
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc77"
+  },
+  "id": 27,
+  "name": "Minifig Accessories",
+  "part_count": 1551
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc78"
+  },
+  "id": 28,
+  "name": "Plants and Animals",
+  "part_count": 1377
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc79"
+  },
+  "id": 29,
+  "name": "Wheels and Tyres",
+  "part_count": 333
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc7a"
+  },
+  "id": 30,
+  "name": "Tubes and Hoses",
+  "part_count": 190
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc7b"
+  },
+  "id": 31,
+  "name": "String, Bands and Reels",
+  "part_count": 121
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc7c"
+  },
+  "id": 32,
+  "name": "Bars, Ladders and Fences",
+  "part_count": 122
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc7d"
+  },
+  "id": 33,
+  "name": "Rock",
+  "part_count": 47
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc7e"
+  },
+  "id": 34,
+  "name": "Supports, Girders and Cranes",
+  "part_count": 87
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc7f"
+  },
+  "id": 35,
+  "name": "Transportation - Sea and Air",
+  "part_count": 242
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc80"
+  },
+  "id": 36,
+  "name": "Transportation - Land",
+  "part_count": 514
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc81"
+  },
+  "id": 37,
+  "name": "Bricks Curved",
+  "part_count": 505
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc82"
+  },
+  "id": 38,
+  "name": "Flags, Signs, Plastics and Cloth",
+  "part_count": 971
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc83"
+  },
+  "id": 39,
+  "name": "Magnets and Holders",
+  "part_count": 38
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc84"
+  },
+  "id": 40,
+  "name": "Technic Panels",
+  "part_count": 95
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc85"
+  },
+  "id": 41,
+  "name": "Bionicle, Hero Factory and Constraction",
+  "part_count": 1414
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc86"
+  },
+  "id": 42,
+  "name": "Belville, Scala and Fabuland",
+  "part_count": 691
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc87"
+  },
+  "id": 43,
+  "name": "Znap",
+  "part_count": 22
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc88"
+  },
+  "id": 44,
+  "name": "Mechanical",
+  "part_count": 26
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc89"
+  },
+  "id": 45,
+  "name": "Power Functions, Mindstorms and Electric",
+  "part_count": 498
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc8a"
+  },
+  "id": 46,
+  "name": "Technic Axles",
+  "part_count": 27
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc8b"
+  },
+  "id": 47,
+  "name": "Windscreens and Fuselage",
+  "part_count": 376
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc8c"
+  },
+  "id": 48,
+  "name": "Clikits",
+  "part_count": 403
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc8d"
+  },
+  "id": 49,
+  "name": "Plates Angled",
+  "part_count": 72
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc8e"
+  },
+  "id": 50,
+  "name": "HO Scale",
+  "part_count": 100
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc8f"
+  },
+  "id": 51,
+  "name": "Technic Beams",
+  "part_count": 42
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc90"
+  },
+  "id": 52,
+  "name": "Technic Gears",
+  "part_count": 83
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc91"
+  },
+  "id": 53,
+  "name": "Technic Pins",
+  "part_count": 32
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc92"
+  },
+  "id": 54,
+  "name": "Technic Bushes",
+  "part_count": 7
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc93"
+  },
+  "id": 55,
+  "name": "Technic Beams Special",
+  "part_count": 30
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc94"
+  },
+  "id": 56,
+  "name": "Tools",
+  "part_count": 21
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc95"
+  },
+  "id": 57,
+  "name": "Non-Buildable Figures (Duplo, Fabuland, etc)",
+  "part_count": 1092
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc96"
+  },
+  "id": 58,
+  "name": "Stickers",
+  "part_count": 3583
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc97"
+  },
+  "id": 59,
+  "name": "Minifig Heads",
+  "part_count": 3965
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc98"
+  },
+  "id": 60,
+  "name": "Minifig Upper Body",
+  "part_count": 5699
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc99"
+  },
+  "id": 61,
+  "name": "Minifig Lower Body",
+  "part_count": 2236
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc9a"
+  },
+  "id": 62,
+  "name": "Minidoll Heads",
+  "part_count": 236
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc9b"
+  },
+  "id": 63,
+  "name": "Minidoll Upper Body",
+  "part_count": 454
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc9c"
+  },
+  "id": 64,
+  "name": "Minidoll Lower Body",
+  "part_count": 306
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc9d"
+  },
+  "id": 65,
+  "name": "Minifig Headwear",
+  "part_count": 1702
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc9e"
+  },
+  "id": 66,
+  "name": "Modulex",
+  "part_count": 1158
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cc9f"
+  },
+  "id": 67,
+  "name": "Tiles Round and Curved",
+  "part_count": 778
+},{
+  "_id": {
+    "$oid": "62ddb45fdb1bb342a513cca0"
+  },
+  "id": 68,
+  "name": "Projectiles / Launchers",
+  "part_count": 70
+}]
