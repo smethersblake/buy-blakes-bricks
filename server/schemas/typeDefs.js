@@ -7,7 +7,6 @@ const typeDefs = gql`
         email: String
         cartId: Cart
     }
-
     type Color {
         _id: ID
         id: Int
@@ -15,7 +14,6 @@ const typeDefs = gql`
         rgb: String
         is_trans: Boolean
     }
-
     type Brick {
         _id: ID
         part_num: Int
@@ -47,7 +45,6 @@ const typeDefs = gql`
     }
     type Query {
         getOneBrick(id: ID): Brick
-
         getBricks(_id: ID, name: String, part_cat_id: Int, part_img_url: String, part_num: Int, price: Float, quantity: Int): [Brick]
         getColors(_id: ID, name: String, rgb: String, is_trans: Boolean): [Color]
         category: Category
@@ -63,4 +60,3 @@ const typeDefs = gql`
     
     }`
 module.exports = typeDefs;
-

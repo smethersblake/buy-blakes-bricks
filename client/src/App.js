@@ -1,32 +1,54 @@
-import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home'
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+  createHttpLink,
+} from "@apollo/client";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup"
 import About from './components/About'
+import { setContext } from "@apollo/client/link/context";
 
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: "/graphql",
+});
+
+const authLink = setContext((_, { headers }) => {
+  const token = localStorage.getItem("id_token");
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : "",
+    },
+  };
 });
 const client = new ApolloClient({
-  link: httpLink,
+  link: authLink.concat(httpLink),
   cache: new InMemoryCache(),
-})
+});
 
 function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
+        <div>
+          <Header />
           <div>
-            <Header />
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path='/' element={<Home />} />
+              <Route path='/login' element={<Login />} />
+              <Route path='/signup' element={<Signup />} />
               <Route path="/about" element={<About />} />
             </Routes>
-            
-            <Footer />
           </div>
+          <Footer />
+        </div>
       </Router>
     </ApolloProvider>
   );
