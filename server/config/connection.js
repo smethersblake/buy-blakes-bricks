@@ -1,13 +1,5 @@
-const mongoose = require('mongoose');
-<<<<<<< HEAD
 
-mongoose.connect(process.env.MONGOBD_URI || `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_NAME}`, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-  useFindAndModify: false
-});
-=======
+const mongoose = require('mongoose');
 require('dotenv').config()
 
 mongoose.connect(
@@ -18,6 +10,5 @@ mongoose.connect(
     useUnifiedTopology: true,
   }
 );
->>>>>>> develop
 
 module.exports = mongoose.connection;
