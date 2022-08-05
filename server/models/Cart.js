@@ -1,9 +1,9 @@
 const {Schema, model} = require('mongoose')
 
 const cartSchema = new Schema({
-    userId: {
-        type: Schema.Types.ObjectId,
-        ref: "User"
+    cartEmpty: {
+        type: Boolean,
+        default: true
     },
     bricks: [
         {

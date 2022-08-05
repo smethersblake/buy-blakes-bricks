@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose')
+const Color = require('./Color')
 
 const brickSchema = new Schema({
     part_num: {
@@ -38,6 +39,7 @@ const brickSchema = new Schema({
     },
     color: {
         type: Schema.Types.Mixed,
+        ref: Color
     }
 })
 

@@ -5,13 +5,12 @@ const typeDefs = gql`
         _id: ID
         username: String
         email: String
-        password: String
-        cart: Cart
+        cartId: Cart
     }
 
     type Color {
         _id: ID
-        id type: Int
+        id: Int
         name: String
         rgb: String
         is_trans: Boolean
@@ -25,7 +24,7 @@ const typeDefs = gql`
         part_url: String
         part_img_url: String
         quantity: Int
-        price: Int
+        price: Float
         print_of: String
         color: Color
     }
@@ -34,23 +33,34 @@ const typeDefs = gql`
         _id: ID
         id: Int
         name: String
-        part_count: int
+        part_count: Int
     }
     
     type Cart {
         _id: ID
-        bricks:[Brick]
+        cartEmpty: Boolean
+        bricks: [Brick]
     }
     type Auth {
         token: ID
         user: User
     }
     type Query {
-        getAllBricks: [Brick]
-        getAllColors: [Color]
-        getAllCategories: [Category]
-        getAllUser: [User]
+        getOneBrick(id: ID): Brick
+
+        getBricks(_id: ID, name: String, part_cat_id: Int, part_img_url: String, part_num: Int, price: Float, quantity: Int): [Brick]
+        getColors(_id: ID, name: String, rgb: String, is_trans: Boolean): [Color]
+        category: Category
+        getCategories(_id: ID, id: Int, name: String, part_count: Int): [Category]
+        getAllCarts: [Cart]
     }
+    
     type Mutation {
-        login(email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
+    addUser(username: String!, email: String!, password: String!): Auth
+    createCart(id: String, id2: ID): User
+    addToCart(id: String, brickId: ID): Cart
+    
     }`
+module.exports = typeDefs;
+
