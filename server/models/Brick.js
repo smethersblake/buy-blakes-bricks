@@ -37,9 +37,8 @@ const brickSchema = new Schema({
         default: null,
         required: false
     },
-    color: {
-        type: Schema.Types.Mixed,
-        ref: Color
+    color_id: {
+        type: Number
     }
 })
 
