@@ -58,7 +58,7 @@ const resolvers = {
             const cart = await Cart.findOneAndUpdate(
                 { _id: args._id },
                 { $addToSet: { bricks: brick } }
-                    ).populate('cart')
+                    )
             
                 return cart
         }
