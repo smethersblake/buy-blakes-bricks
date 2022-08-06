@@ -14,6 +14,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup"
 import About from './components/About'
 import { setContext } from "@apollo/client/link/context";
+import { StoreProvider } from "./utils/GlobalState";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -38,16 +39,18 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <Header />
-          <div>
-            <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/login' element={<Login />} />
-              <Route path='/signup' element={<Signup />} />
-              <Route path="/about" element={<About />} />
-            </Routes>
-          </div>
-          <Footer />
+          <StoreProvider>
+            <Header />
+            <div>
+              <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/login' element={<Login />} />
+                <Route path='/signup' element={<Signup />} />
+                <Route path="/about" element={<About />} />
+              </Routes>
+            </div>
+            <Footer />
+          </StoreProvider>
         </div>
       </Router>
     </ApolloProvider>

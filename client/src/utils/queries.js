@@ -1,0 +1,17 @@
+import { gql } from '@apollo/client';
+
+export const QUERY_GET_BRICKS = gql`
+    query getBricks($name: String!) {
+        getBricks( name: $name){
+         _id: ID
+        part_num: Int
+        name: String
+        part_cat_id: Int
+        part_url: String
+        part_img_url: String
+        quantity: Int
+        price: Float
+        print_of: String
+        color: Color
+        }
+    }`
