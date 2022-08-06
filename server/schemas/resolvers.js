@@ -1,5 +1,6 @@
 const { AuthenticationError } = require('apollo-server-express')
 const {  Brick, Color, Category, Cart, User } = require('../models')
+const { findOne } = require('../models/Color')
 const { signToken } = require('../utils/auth')
 
 const resolvers = {
@@ -50,48 +51,18 @@ const resolvers = {
             const token = signToken(user);
                 return { token, user };
         },
-        createCart: async (parent, args, context) =>
-        {
-                const user = await User.findByIdAndUpdate(
-                    {_id: args.id },
-                    { $set: {cartId: args.id2}})
-            return user
-        },
         addToCart: async (parent, args, context) =>
         {
-            const cart = await Cart.findByIdAndRemove(
-                { _id: args.id },
-                {$Set: {brickId: args.brickId}}
-            )
+            // need to update to context.user.cart_id for cart id
+            const brick = await Brick.findOne({ _id: args.brickId })
+            const cart = await Cart.findOneAndUpdate(
+                { _id: args._id },
+                { $addToSet: { bricks: brick } }
+                    ).populate('cart')
+            
+                return cart
         }
     }
-    
-        // createCart: async (parent, args, context) =>
-        // {
-        //     if (context.user)
-        //     {
-        //         const cart = await Cart.create({ ...args, username: context.user.username})
-        //         await User.findByIdAndUpdate(
-        //             { _id: context.user._id },
-        //             { $push: {carts: cart._id}}
-        //         )
-        //     }
-        //     return cart
-        // }
-        // addToCart: async (parent, { brickId }, context) =>
-        // {
-        //     if (context.cart)
-        //     {
-        //         const updatedCart = await Cart.create(
-        //             { _id: cart._id },
-        //             { $addToSet: { bricks: brickId } },
-        //             {new: true}
-        //         ).populate('bricks')
-        //         return updatedCart
-        //     }
-        // }
     }
-
-
 
 module.exports = resolvers;

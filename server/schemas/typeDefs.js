@@ -56,7 +56,7 @@ const typeDefs = gql`
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
     createCart(id: String, id2: ID): User
-    addToCart(id: String, brickId: ID): Cart
+    addToCart(_id: ID, brickId: ID): Cart
     
     }`
 module.exports = typeDefs;
