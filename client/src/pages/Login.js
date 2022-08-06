@@ -31,14 +31,14 @@ function Login(props) {
 
   return (
     <div className="container my-1">
-      <Link to="/signup">← Go to Signup</Link>
+      <Link to="/signup" className='text-sm'>← Go to Signup</Link>
 
-      <h2>Login</h2>
+      <h2 className='text-xl'>Login</h2>
       <form onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2">
-          <label htmlFor="email">Email address: </label>
-          <input className='border-2 border-rose-500'
-            placeholder="youremail@test.com"
+          <label htmlFor="email" className="mb-2 text-sm font-medium text-gray-900  dark:text-gray-300 pr-8">Email: </label>
+          <input className='rounded-full'
+            placeholder="email@test.com"
             name="email"
             type="email"
             id="email"
@@ -46,9 +46,9 @@ function Login(props) {
           />
         </div>
         <div className="flex-row space-between my-2">
-          <label htmlFor="pwd">Password:</label>
-          <input
-            placeholder="******"
+          <label htmlFor="pwd" className="mb-2 text-sm font-medium text-gray-900  dark:text-gray-300 pr-2">Password:</label>
+          <input className='rounded-full'
+            placeholder="*****"
             name="password"
             type="password"
             id="pwd"
@@ -57,11 +57,11 @@ function Login(props) {
         </div>
         {error ? (
           <div>
-            <p className="error-text">The provided credentials are incorrect</p>
+            <p className="text-red-700">The provided credentials are incorrect</p>
           </div>
         ) : null}
         <div className="flex-row flex-end">
-          <button type="submit" className="rounded-full outline outline-offset-2 outline-blue-500">Submit</button>
+          <button type="submit" className="inline-flex py-2 px-4  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white bg-green-100 rounded-full">Submit</button>
         </div>
       </form>
     </div>
