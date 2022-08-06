@@ -24,7 +24,7 @@ const typeDefs = gql`
         quantity: Int
         price: Float
         print_of: String
-        color: Color
+        color_id: Int
     }
     
     type Category {
@@ -45,7 +45,7 @@ const typeDefs = gql`
     }
     type Query {
         getOneBrick(id: ID): Brick
-        getBricks(_id: ID, name: String, part_cat_id: Int, part_img_url: String, part_num: Int, price: Float, quantity: Int): [Brick]
+        getBricks(_id: ID, name: String, part_cat_id: Int, part_img_url: String, part_num: Int, price: Float, quantity: Int, color_id: Int): [Brick]
         getColors(_id: ID, name: String, rgb: String, is_trans: Boolean): [Color]
         category: Category
         getCategories(_id: ID, id: Int, name: String, part_count: Int): [Category]
