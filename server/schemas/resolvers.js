@@ -53,7 +53,7 @@ const resolvers = {
         },
         addToCart: async (parent, args, context) =>
         {
-            // const user = await User.findOne({ cart_id: context.user.cart_id })
+            // need to update to context.user.cart_id for cart id
             const brick = await Brick.findOne({ _id: args.brickId })
             const cart = await Cart.findOneAndUpdate(
                 { _id: args._id },
