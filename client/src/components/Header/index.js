@@ -10,7 +10,8 @@ function Header() {
                     <div className="relative z-30 w-5/6 px-6 py-8 text-white md:py-10 md:w-1/2">
                         <h2 className="text-5xl font-Play">Buy Blakes Bricks</h2>
                         <Link to="/login" className='text-sm pr-5'> Login</Link>
-                        <Link to="/signup" className='text-sm'>Signup</Link>
+                        <Link to="/signup" className='text-sm pr-5'>Signup </Link>
+                        <Link to="/cart" className='text-sm'>🛍️</Link>
                     </div>
                     <div className="absolute top-0 right-0 flex w-full h-full">
                         <div className="w-1/3 h-full bg-neutral-500"></div>
