@@ -7,6 +7,8 @@ const { Provider } = StoreContext;
 const StoreProvider = ({ value = [], ...props}) => {
     const [state, dispatch ] = useBrickReducer({
         getBricks: [],
+        currentSearch: '',
+        getCategories: [],
     });
     console.log(state);
     return <Provider value={[state, dispatch]} {...props} />
