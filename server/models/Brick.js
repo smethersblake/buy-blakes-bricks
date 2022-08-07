@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose')
+const Color = require('./Color')
 
 const brickSchema = new Schema({
     part_num: {
@@ -36,8 +37,17 @@ const brickSchema = new Schema({
         default: null,
         required: false
     },
-    color: {
-        type: Schema.Types.Mixed,
+    color_id: {
+        type: Number
+    },
+    color_name: {
+        type: String
+    },
+    rgb: {
+        type: String
+    },
+    is_trans: {
+        type: Boolean
     }
 })
 
