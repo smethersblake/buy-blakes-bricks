@@ -12,7 +12,10 @@ export const QUERY_GET_BRICKS = gql`
         quantity: Int
         price: Float
         print_of: String
-        color: Color
+        color_id: Int
+        color_name: String
+        rgb: String
+        is_trans: Boolean
         }
     }
 `;
@@ -41,6 +44,9 @@ query($getCategoriesId: Int) {
         quantity
         price
         color_id
+         color_name
+        rgb
+        is_trans
     }
   }`
 
