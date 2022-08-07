@@ -20,18 +20,18 @@ function BrickItem(item) {
     const [state, dispatch] = useStoreContext();
 
     return (
-        <div className="max-w-sm">
+        <div className="max-w-lg">
             <Card
                 horizontal={true}
                 imgSrc={part_img_url}
             >
-                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h5 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                     {name}
                 </h5>
                 <p className="font-normal text-gray-700 dark:text-gray-400">
                     Part Number: {part_num}
                 </p>
-                <p className="font-normal text-gray-700 dark:text-gray-400">
+                <p className="font-normal text-gray-700 dark:text-gray-400 text-sm">
                     Part URL: {part_url}
                 </p>
                 <p className="font-normal text-gray-700 dark:text-gray-400">
