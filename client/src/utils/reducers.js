@@ -129,6 +129,6 @@ export const reducer = (state, action) => {
 //   }
 // };
 
-export function useProductReducer(initialState) {
+export function useBrickReducer(initialState) {
   return useReducer(reducer, initialState)
 }
