@@ -33,7 +33,7 @@ function Home() {
         <div className="bg-slate-200">
             <div className="container items-center mx-auto pb-64 bg-slate-200">
                 <div>
-                    <Dropdown label="All Categories" className="bg-neutral-500">
+                <Dropdown label="All Categories" className="bg-neutral-500">
                     {getCategories.map((item) => (
                         <Dropdown.Item 
                             key={item.id}
@@ -53,3 +53,5 @@ function Home() {
 }
 
 export default Home;
+
+

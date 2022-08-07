@@ -31,7 +31,7 @@ function BrickList() {
 
     return (
         <div>
-            <h2>Our Bricks:</h2>
+            <h2 className="text-6xl text-bold">Blake's Bricks:</h2>
             {state.getBricks.length ? (
                 <div className="grid grid-cols-4 gap-4">
                     {filterBricks().map((bricks) => (
