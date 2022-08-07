@@ -5,7 +5,7 @@ import Footer from "../";
 
 afterEach(cleanup);
 
-describe("About component", () => {
+describe("Footer component", () => {
    // Renders
    it("renders", () => {
       render(<Footer />);

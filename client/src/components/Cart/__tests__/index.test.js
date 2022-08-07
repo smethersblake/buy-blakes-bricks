@@ -1,13 +1,13 @@
 import React from "react";
 import { render, cleanup } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import Header from "../";
+import Cart from "../";
 
 afterEach(cleanup);
 
-describe("Header component", () => {
+describe("Cart component", () => {
    // Renders
    it("renders", () => {
-      render(<Header />);
+      render(<Cart />);
    });
 });
