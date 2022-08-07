@@ -10,6 +10,7 @@ import {
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
+import Singlebrick from "./pages/Singlebrick";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup"
 import About from './components/About'
@@ -49,6 +50,9 @@ function App() {
                 <Route path='/login' element={<Login />} />
                 <Route path='/signup' element={<Signup />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/bricks/:id" element={<Singlebrick />} />
+                <Route path='/contact' element={<Contact />} />
+                <Route path='/cart' element={<Cart />} />
               </Routes>
             </div>
             <Footer />
