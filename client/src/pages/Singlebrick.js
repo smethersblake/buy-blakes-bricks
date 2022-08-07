@@ -31,8 +31,8 @@ function Singlebrick() {
         <>
             {currentBrick ? (
                 <div className="bg-slate-200">
-                    <div className='container items-center mx-auto p-72 bg-slate-200'>
-                        <Link to="/">Back to Bricks</Link>
+                    <div className='container items-center mx-auto p-36 bg-slate-200'>
+                        <Link to="/" className='bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded'>Back to Bricks</Link>
 
                         <div className="flex flex-col items-center mx-auto bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                             <img className="object-cover w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src={currentBrick.part_img_url} alt=""/>
@@ -40,6 +40,7 @@ function Singlebrick() {
                                 <h5 className="mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">{currentBrick.name}</h5>
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Part Number: {currentBrick.part_num}</p>
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Color: {currentBrick.color_name}</p>
+                                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Translucent: {currentBrick.is_trans}</p>
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Quantity: {currentBrick.quantity}{pluralize(" brick", currentBrick.quantity)}</p>
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Price: {currentBrick.price}</p>
                             </div> 
