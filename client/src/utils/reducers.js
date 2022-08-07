@@ -2,7 +2,8 @@ import {
     UPDATE_SEARCH_BRICKS,
     UPDATE_CURRENT_SEARCH,
     UPDATE_CATEGORIES,
-    UPDATE_CURRENT_CATEGORY
+    UPDATE_CURRENT_CATEGORY,
+    UPDATE_BRICKS
 } from './actions';
 import { useReducer } from 'react';
 
@@ -28,6 +29,11 @@ export const reducer = (state, action) => {
             return {
                 ...state,
                 currentCategory: action.currentCategory
+            };
+        case UPDATE_BRICKS:
+            return {
+                ...state,
+                getBricks: [...action.getBricks],
             };
         default:
             return state;

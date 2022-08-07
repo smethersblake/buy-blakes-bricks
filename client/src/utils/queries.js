@@ -25,6 +25,23 @@ export const QUERY_CATEGORIES = gql`
         }
     }
 `
+export const QUERY_BRICKS = gql`
+query($getCategoriesId: Int) {
+    getCategories(id: $getCategoriesId) {
+      name
+      id
+    }
+    getBricks {
+        _id
+        part_num
+        name
+        part_cat_id
+        part_url
+        part_img_url
+        quantity
+        price
+    }
+  }`
 
 
 
