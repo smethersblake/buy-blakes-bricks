@@ -1,12 +1,13 @@
 import React, { useEffect } from 'react';
 import { useQuery } from '@apollo/client';
-import { useStoreContext } from '../../utils/GlobalState';
-import { UPDATE_BRICKS } from '../../utils/actions';
-import BrickItem from '../BrickItem';
-import { QUERY_BRICKS } from '../../utils/queries';
-// import { Link } from 'react-router-dom';
+import { useStoreContext } from '../utils/GlobalState';
+import { UPDATE_BRICKS } from '../utils/actions';
+import BrickItem from '../../src/components/BrickItem';
+import { QUERY_BRICKS } from '../utils/queries';
+import { Link } from 'react-router-dom';
+import DropdownTab from '../components/Dropdown';
 
-function BrickLists() {
+function BrickList() {
     const [state, dispatch] = useStoreContext();
     const {currentCategory } = state;
     const { loading, data } = useQuery(QUERY_BRICKS);
@@ -32,7 +33,9 @@ function BrickLists() {
 
     return (
         <div>
-
+            <div className="bg-slate-200">
+                    <DropdownTab></DropdownTab>
+                <div>
             <h2 className="text-6xl text-bold">Blake's Bricks:</h2>
             {state.getBricks.length ? (
                 <div className="grid grid-cols-4 gap-4">
@@ -57,8 +60,35 @@ function BrickLists() {
             ) : (
                 <h2>You haven't added any Bricks yet!</h2>
                 )}
+                </div>
+                </div>
         </div>
     )
 }
 
-export default BrickLists;
+export default BrickList;
+
+
+
+<div className="bg-slate-200">
+            <div className="container items-center mx-auto pb-64 bg-slate-200">
+                <div>
+                    <DropdownTab></DropdownTab>
+                {/* <Dropdown label="All Categories" className="bg-neutral-500">
+                        {getCategories.map((item) => (
+                    <Link to={`/${item.id}`}>
+                        <Dropdown.Item 
+                            key={item.id}
+                            onClick={() => {
+                                handleClick(item.id);
+                            }}
+                            >
+                            {item.name}
+                                </Dropdown.Item>
+                                
+                                </Link>
+                                ))}
+                    </Dropdown> */}
+                </div>
+            </div>
+        </div>

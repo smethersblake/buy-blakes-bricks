@@ -16,6 +16,7 @@ import Signup from "./pages/Signup"
 import About from './components/About'
 import Contact from './components/Contact'
 import Cart from './components/Cart'
+import BrickList from "./pages/BrickList";
 import { setContext } from "@apollo/client/link/context";
 import { StoreProvider } from "./utils/GlobalState";
 
@@ -53,6 +54,7 @@ function App() {
                 <Route path="/bricks/:id" element={<Singlebrick />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/cart' element={<Cart />} />
+                <Route path="/bricklist" element={<BrickList />}/>
               </Routes>
             </div>
             <Footer />
