@@ -39,7 +39,7 @@ function Singlebrick() {
                             <div className="flex flex-col justify-between p-4 leading-normal">
                                 <h5 className="mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">{currentBrick.name}</h5>
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Part Number: {currentBrick.part_num}</p>
-                                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Color: Fix me Blake!</p>
+                                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Color: {currentBrick.color_name}</p>
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Quantity: {currentBrick.quantity}{pluralize(" brick", currentBrick.quantity)}</p>
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Price: {currentBrick.price}</p>
                             </div> 

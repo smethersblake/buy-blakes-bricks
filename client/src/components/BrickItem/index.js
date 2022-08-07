@@ -14,6 +14,9 @@ function BrickItem(item) {
         quantity,
         price,
         color_id,
+        color_name,
+        rgb,
+        is_trans,
     } = item;
 
     const [state, dispatch] = useStoreContext();
@@ -26,7 +29,7 @@ function BrickItem(item) {
                     <div class="flex flex-col justify-between p-4 leading-normal">
                         <h5 class="overflow-y-hidden h-24 ... mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Part Number: {part_num}</p>
-                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Color: Fix me Blake!</p>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Color: {color_name }</p>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Quantity: {quantity}{pluralize(" brick", quantity)}</p>
                         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Price: {price}</p>
                     </div> 
