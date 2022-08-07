@@ -30,22 +30,24 @@ function Home() {
     }
 
     return (
-        <div className="container items-center mx-auto pb-64">
-            <div>
-                <Dropdown label="All Categories" className="bg-neutral-500">
-                {getCategories.map((item) => (
-                    <Dropdown.Item 
-                        key={item.id}
-                        onClick={() => {
-                            handleClick(item.id);
-                        }}
-                    >
-                        {item.name}
-                    </Dropdown.Item>
-                ))}
-                </Dropdown>
+        <div className="bg-slate-200">
+            <div className="container items-center mx-auto pb-64 bg-slate-200">
+                <div>
+                    <Dropdown label="All Categories" className="bg-neutral-500">
+                    {getCategories.map((item) => (
+                        <Dropdown.Item 
+                            key={item.id}
+                            onClick={() => {
+                                handleClick(item.id);
+                            }}
+                        >
+                            {item.name}
+                        </Dropdown.Item>
+                    ))}
+                    </Dropdown>
+                </div>
+                <BrickList />
             </div>
-            <BrickList />
         </div>
     )
 }

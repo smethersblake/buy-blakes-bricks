@@ -4,7 +4,6 @@ import { useStoreContext } from '../../utils/GlobalState';
 import { UPDATE_BRICKS } from '../../utils/actions';
 import BrickItem from '../BrickItem';
 import { QUERY_BRICKS } from '../../utils/queries';
-import { Card } from 'flowbite-react';
 
 function BrickList() {
     const [state, dispatch] = useStoreContext();
@@ -34,7 +33,7 @@ function BrickList() {
         <div>
             <h2>Our Bricks:</h2>
             {state.getBricks.length ? (
-                <div className="flex-row">
+                <div className="grid grid-cols-4 gap-4">
                     {filterBricks().map((bricks) => (
                         <BrickItem
                         key={bricks._id}
