@@ -39,6 +39,15 @@ const brickSchema = new Schema({
     },
     color_id: {
         type: Number
+    },
+    color_name: {
+        type: String
+    },
+    rgb: {
+        type: String
+    },
+    is_trans: {
+        type: Boolean
     }
 })
 
