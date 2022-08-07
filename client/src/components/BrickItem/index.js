@@ -32,6 +32,7 @@ function BrickItem(item) {
                     </div> 
                 </div> 
             </Link>
+
         </div>
     )
 }
