@@ -31,8 +31,8 @@ function BrickItem(item) {
                 <p className="font-normal text-gray-700 dark:text-gray-400">
                     Part Number: {part_num}
                 </p>
-                <p className="font-normal text-gray-700 dark:text-gray-400 text-sm">
-                    Part URL: {part_url}
+                <p className="font-normal text-gray-700 dark:text-gray-400">
+                    Part URL: <div className='text-xs'>{part_url}</div>
                 </p>
                 <p className="font-normal text-gray-700 dark:text-gray-400">
                     Quantity: {quantity}

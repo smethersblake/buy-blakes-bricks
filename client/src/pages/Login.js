@@ -30,9 +30,9 @@ function Login(props) {
   };
 
   return (
-    <div className="container my-1">
-      <Link to="/signup" className='text-sm pr-4'>← Go to Signup</Link>
-      <Link to="/" className='text-sm'>← Home</Link>
+    <div className="ml-10">
+      <Link to="/signup" className='text-sm pr-4 '>← Go to Signup</Link>
+      <Link to="/" className='text-sm ml-3'>← Home</Link>
       <h2 className='text-xl'>Login</h2>
       <form onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2">
@@ -61,7 +61,7 @@ function Login(props) {
           </div>
         ) : null}
         <div className="flex-row flex-end">
-          <button type="submit" className="inline-flex py-2 px-4  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white bg-green-100 rounded-full">Submit</button>
+          <button type="submit" className="inline-flex py-2 px-4  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white bg-green-100 rounded-full mb-6">Submit</button>
         </div>
       </form>
     </div>

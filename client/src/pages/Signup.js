@@ -38,7 +38,7 @@ const Signup = () => {
   };
 
   return (
-    <div className='container my-1'>
+    <div className='ml-10'>
       <Link to='/login' className='text-sm pr-4'>
         ← Go to Login
       </Link>
@@ -101,7 +101,7 @@ const Signup = () => {
         </div>
         <button
           type='submit'
-          className='inline-flex py-2 px-4  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white bg-green-100 rounded-full shadow'
+          className='inline-flex py-2 px-4  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white bg-green-100 rounded-full shadow mb-6'
         >
           Submit
         </button>

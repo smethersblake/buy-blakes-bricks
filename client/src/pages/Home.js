@@ -31,7 +31,7 @@ function Home() {
 
     return (
         <div className="container items-center mx-auto pb-64">
-            <div>
+            <div className='mt-10'>
                 <Dropdown label="All Categories" className="bg-neutral-500">
                 {getCategories.map((item) => (
                     <Dropdown.Item 
