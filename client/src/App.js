@@ -13,6 +13,8 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup"
 import About from './components/About'
+import Contact from './components/Contact'
+import Cart from './components/Cart'
 import { setContext } from "@apollo/client/link/context";
 import { StoreProvider } from "./utils/GlobalState";
 
@@ -51,6 +53,19 @@ function App() {
             </div>
             <Footer />
           </StoreProvider>
+          {/* <Header />
+          <div>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/login' element={<Login />} />
+              <Route path='/signup' element={<Signup />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/contact' element={<Contact />} />
+              <Route path='/cart' element={<Cart />} />
+              
+            </Routes>
+          </div>
+          <Footer /> */}
         </div>
       </Router>
     </ApolloProvider>
