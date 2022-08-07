@@ -4,7 +4,7 @@ import { QUERY_CATEGORIES } from '../utils/queries';
 import { useStoreContext } from '../utils/GlobalState';
 import { UPDATE_CATEGORIES, UPDATE_CURRENT_CATEGORY } from '../utils/actions';
 import { Dropdown } from 'flowbite-react';
-import { BrickList } from '../components/BrickList';
+import BrickList from '../components/BrickList';
 
 
 

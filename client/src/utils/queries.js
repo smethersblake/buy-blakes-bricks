@@ -40,6 +40,7 @@ query($getCategoriesId: Int) {
         part_img_url
         quantity
         price
+        color_id
     }
   }`
 

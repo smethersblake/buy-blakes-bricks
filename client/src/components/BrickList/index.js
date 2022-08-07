@@ -33,10 +33,21 @@ function BrickList() {
     return (
         <div>
             <h2>Our Bricks:</h2>
-            {state.getbricks.length ? (
+            {state.getBricks.length ? (
                 <div className="flex-row">
                     {filterBricks().map((bricks) => (
-                        <p>{bricks.name}</p>
+                        <BrickItem
+                        key={bricks._id}
+                        _id={bricks._id}
+                        part_num={bricks.part_num}
+                        name={bricks.name}
+                        part_cat_id={bricks.part_cat_id}
+                        part_url={bricks.part_url}
+                        part_img_url={bricks.part_img_url}
+                        quantity={bricks.quantity}
+                        price={bricks.price}
+                        color_id={bricks.color_id}
+                        />
                     ))}
                 </div>
             ) : (

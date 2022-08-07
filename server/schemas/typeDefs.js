@@ -24,7 +24,7 @@ const typeDefs = gql`
         quantity: Int
         price: Float
         print_of: String
-        color: Color
+        color_id: Int
     }
     
     type Category {
