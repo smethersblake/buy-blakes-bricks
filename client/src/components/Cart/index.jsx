@@ -17,7 +17,6 @@ const Cart = () => {
       <div class="orderCheckout">
         <div class="shoppingCart-Container">
           <div className="cart">
-            <div className="close">[close]</div>
             <h2>Shopping Cart</h2>
             <div>
               <p>cart items</p>

@@ -78,7 +78,6 @@ cart {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
- 
 }
 
 .paymentCart-Container {
@@ -88,14 +87,17 @@ cart {
   display: flex;
   flex-direction: row;
   background-color: rgb(208, 214, 214);
-  
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.cart {
+  padding: 0px 15px;
 }
 
 .shoppingCart-Container {
   width: 60%;
-  
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
-
 
 h2 {
   font-size: x-large;
