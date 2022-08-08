@@ -17,7 +17,9 @@ function About() {
                 you order form www.buyblakesbricks.com each package is shipped with love and care and the hope that LEGO
                 brings you as much joy as it has for me though out the years.
                 </p>
-            <p>This website was created for a group project for the University of Minnesota Coding Bootcamp.</p>
+            <p>This website was created for a group project for the University of Minnesota Coding Bootcamp.
+                The LEGO bricks are truly for sale at the price shown please contact me if you are intrested in any item.
+            </p>
         </div>
         
     )
