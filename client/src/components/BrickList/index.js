@@ -4,8 +4,9 @@ import { useStoreContext } from '../../utils/GlobalState';
 import { UPDATE_BRICKS } from '../../utils/actions';
 import BrickItem from '../BrickItem';
 import { QUERY_BRICKS } from '../../utils/queries';
+// import { Link } from 'react-router-dom';
 
-function BrickList() {
+function BrickLists() {
     const [state, dispatch] = useStoreContext();
     const {currentCategory } = state;
     const { loading, data } = useQuery(QUERY_BRICKS);
@@ -31,6 +32,7 @@ function BrickList() {
 
     return (
         <div>
+
             <h2 className="text-6xl text-bold">Blake's Bricks:</h2>
             {state.getBricks.length ? (
                 <div className="grid grid-cols-4 gap-4">
@@ -46,6 +48,7 @@ function BrickList() {
                         quantity={bricks.quantity}
                         price={bricks.price}
                         color_id={bricks.color_id}
+
                         color_name={bricks.color_name}
                         rgb={bricks.rgb}
                         is_trans={bricks.is_trans}
@@ -54,9 +57,9 @@ function BrickList() {
                 </div>
             ) : (
                 <h2>You haven't added any Bricks yet!</h2>
-            )}
+                )}
         </div>
     )
 }
 
-export default BrickList;
+export default BrickLists;
