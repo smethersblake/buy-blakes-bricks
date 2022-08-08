@@ -6,11 +6,11 @@ const { signToken } = require('../utils/auth')
 const resolvers = {
     Query: {
         
-        getBricks: async (parent, args) =>
+        getBricks: async (parent, args, context) =>
         {
             return Brick.find(args)
         },
-        getOneBrick: async (parent, args) =>
+        getOneBrick: async (parent, args, context) =>
         {
             return Brick.findOne(args)
         },
@@ -19,7 +19,7 @@ const resolvers = {
         {
             return Color.find(args)
         },
-        getCategories: async (parent, args) =>
+        getCategories: async (parent, args, context) =>
         {
             return Category.find(args)
         },
