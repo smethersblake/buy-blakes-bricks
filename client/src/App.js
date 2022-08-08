@@ -19,32 +19,10 @@ import Cart from './components/Cart'
 import BrickList from "./pages/BrickList";
 import { setContext } from "@apollo/client/link/context";
 import { StoreProvider } from "./utils/GlobalState";
-import { ApolloLink } from "apollo-link";
 
-const myLink = new HttpLink({
-  uri: '/graphql',
-  // other link options...
+const httpLink = createHttpLink({
+  uri: "/graphql",
 });
-
-const thirdPartyLink = new HttpLink({
-  uri: 'https://api.cartql.com/',
-  // other link options...
-});
-
-const client = new ApolloClient({
-  link: ApolloLink.split(
-    operation => operation.getContext().clientName === "third-party",
-    // the string "third-party" can be anything you want,
-    // we will use it in a bit
-    thirdPartyLink, // <= apollo will send to this if clientName is "third-party"
-    myLink // <= otherwise will send to this
-  )
-  // other options
-});
-
-// const httpLink = createHttpLink({
-//   uri: "/graphql",
-// });
 
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem("id_token");
@@ -55,10 +33,10 @@ const authLink = setContext((_, { headers }) => {
     },
   };
 });
-// const client = new ApolloClient({
-//   link: authLink.concat(httpLink),
-//   cache: new InMemoryCache(),
-// });
+const client = new ApolloClient({
+  link: authLink.concat(httpLink),
+  cache: new InMemoryCache(),
+});
 
 
 function App() {
