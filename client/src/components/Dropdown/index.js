@@ -36,23 +36,24 @@ function DropdownTab ()
     return (
         <div>
 
-        <Dropdown id='dropdown' label="All Categories" className="bg-neutral-500" data-dropdown-toggle="dropdownNavbar">
-                        {getCategories.map((item) => (
-                            <Link to={`/bricklist/${item.name}`}>
+            <Dropdown id='dropdown' label="All Categories" className="bg-neutral-500" data-dropdown-toggle="dropdownNavbar">
+                {getCategories.map((item) => (
+                    
                         <Dropdown.Item 
-                                    key={item.id}
-                            onClick={() => {
-                                handleClick(item.id);
+                        key={item.id}
+                        onClick={() => {
+                            handleClick(item.id);
                                 this.setState({})
                             }}
-                            >
+                    >
+                        <Link to={`/bricklist/${item.name}`}>
                             {item.name}
-                                </Dropdown.Item>
+                    </Link>
+                        </Dropdown.Item>
                                 
-                                </Link>
                                 ))}
-        </Dropdown>
-                                </div>
+            </Dropdown>
+        </div>
     )
 }
 
