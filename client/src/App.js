@@ -38,6 +38,7 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+
 function App() {
   return (
     <ApolloProvider client={client}>
@@ -54,7 +55,7 @@ function App() {
                 <Route path="/bricks/:id" element={<Singlebrick />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/cart' element={<Cart />} />
-                <Route path="/bricklist" element={<BrickList />}/>
+                <Route path={`/bricklist/:id`} element={<BrickList />}/>
               </Routes>
             </div>
             <Footer />

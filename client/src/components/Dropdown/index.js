@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useQuery } from '@apollo/client';
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { useStoreContext } from '../../utils/GlobalState';
@@ -18,7 +18,7 @@ function DropdownTab ()
         if (categoryData) {
             dispatch({
                 type: UPDATE_CATEGORIES,
-                getCategories: categoryData.getCategories
+                getCategories: categoryData.getCategories,
             })
         }
     }, [categoryData, dispatch])
@@ -36,12 +36,11 @@ function DropdownTab ()
     return (
         <div>
 
-        <Dropdown label="All Categories" className="bg-neutral-500" data-dropdown-toggle="dropdown">
+        <Dropdown id='dropdown' label="All Categories" className="bg-neutral-500" data-dropdown-toggle="dropdownNavbar">
                         {getCategories.map((item) => (
-                            <Link to={`/bricklist/?${item.id}`}>
+                            <Link to={`/bricklist/${item.name}`}>
                         <Dropdown.Item 
                                     key={item.id}
-                                    
                             onClick={() => {
                                 handleClick(item.id);
                                 this.setState({})

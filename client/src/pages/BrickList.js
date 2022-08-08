@@ -34,7 +34,13 @@ function BrickList() {
     return (
         <div>
             <div className="bg-slate-200">
-                    <DropdownTab></DropdownTab>
+                <div>
+                    <Link to={'/'}>
+
+                    <h2>Different Category</h2>
+                    </Link>
+                </div>
+                    {/* <DropdownTab></DropdownTab> */}
                 <div>
             <h2 className="text-6xl text-bold">Blake's Bricks:</h2>
             {state.getBricks.length ? (

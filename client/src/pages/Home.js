@@ -41,21 +41,6 @@ function Home() {
             <div className="container items-center mx-auto pb-64 bg-slate-200">
                 <div>
                     <DropdownTab></DropdownTab>
-                {/* <Dropdown label="All Categories" className="bg-neutral-500">
-                        {getCategories.map((item) => (
-                    <Link to={`/${item.id}`}>
-                        <Dropdown.Item 
-                            key={item.id}
-                            onClick={() => {
-                                handleClick(item.id);
-                            }}
-                            >
-                            {item.name}
-                                </Dropdown.Item>
-                                
-                                </Link>
-                                ))}
-                    </Dropdown> */}
                 </div>
             </div>
         </div>
