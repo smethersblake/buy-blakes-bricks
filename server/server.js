@@ -1,8 +1,6 @@
 const express = require('express');
 const {ApolloServer} = require('apollo-server-express');
 const path = require('path');
-// Replace with .env variable later
-const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
 const {typeDefs, resolvers} = require('./schemas');
 const {authMiddleware} = require('./utils/auth');
@@ -28,21 +26,6 @@ if (process.env.NODE_ENV === 'production') {
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
-
-// Payment Route
-app.post("/create-checkout-session", async (req, res) => {
-   const session = await stripe.checkout.sessions.create({
-      line_items: [
-         {
-            price: "", // Price ID
-            quantity: ""// Quantity
-         }
-      ],
-      mode: "payment",
-      success_url: "", // Success URL
-      cancel_url: "" // Cancel URL
-   })
-})
 
 // Create a new instance of an Apollo server with the GraphQL schema
 const startApolloServer = async (typeDefs, resolvers) => {
