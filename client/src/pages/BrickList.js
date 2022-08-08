@@ -32,19 +32,19 @@ function BrickList() {
     }
 
     return (
-        <div>
-            <div className="bg-slate-200">
+        <div className=" bg-slate-200">
+            <div className="container items-center mx-auto p-36">
                 <div>
                     <Link to={'/'}>
 
-                    <h2>Different Category</h2>
+                    <h2 className='bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded'>Different Category</h2>
                     </Link>
                 </div>
                     {/* <DropdownTab></DropdownTab> */}
                 <div>
             <h2 className="text-6xl text-bold">Blake's Bricks:</h2>
             {state.getBricks.length ? (
-                <div className="grid grid-cols-4 gap-4">
+                <div className="grid grid-cols-3 gap-6">
                     {filterBricks().map((bricks) => (
                         <BrickItem
                         key={bricks._id}
