@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react'
-import { useQuery } from '@apollo/client';
-import { QUERY_CATEGORIES } from '../utils/queries';
-import { useStoreContext } from '../utils/GlobalState';
-import { UPDATE_CATEGORIES, UPDATE_CURRENT_CATEGORY } from '../utils/actions';
-import { Dropdown } from 'flowbite-react';
-import BrickList from '../components/BrickList';
-import { DropdownItem } from 'flowbite-react/lib/esm/components/Dropdown/DropdownItem';
-import SearchList from '../components/Search';
-import { Link } from "react-router-dom"
+// import { useQuery } from '@apollo/client';
+// import { QUERY_CATEGORIES } from '../utils/queries';
+// import { useStoreContext } from '../utils/GlobalState';
+// import { UPDATE_CATEGORIES, UPDATE_CURRENT_CATEGORY } from '../utils/actions';
+// import { Dropdown } from 'flowbite-react';
+// import BrickList from '../components/BrickList';
+// import { DropdownItem } from 'flowbite-react/lib/esm/components/Dropdown/DropdownItem';
+// import SearchList from '../components/Search';
+// import { Link } from "react-router-dom"
 import DropdownTab from '../components/Dropdown';
 
 

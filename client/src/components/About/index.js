@@ -10,8 +10,14 @@ function About() {
                     <h1 className='text-5xl text-center'>About</h1>
                 </div>
             </div>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget blandit ipsum. Cras pulvinar dapibus eros ut finibus. Aenean eget lacus lorem. Duis at velit sit amet nunc ornare rhoncus nec ac elit. Vestibulum euismod sagittis nunc, sed vehicula justo lobortis varius. Aenean lobortis molestie nulla id eleifend. Praesent et turpis consectetur, lobortis dolor blandit, accumsan erat. Phasellus laoreet sem nec ultrices consectetur. Aenean interdum ipsum ut nulla suscipit, non condimentum nulla rutrum. Etiam cursus eros id mi consectetur, vel facilisis ante finibus. </p>
-        <p> In volutpat nisi vel ultricies convallis. Aenean libero felis, dignissim sit amet egestas ut, suscipit sed augue. Etiam vitae felis molestie, venenatis lectus ut, interdum augue. Donec eros nisl, placerat eu lobortis id, tristique in augue. Nulla ac diam dolor. Vestibulum nisi metus, sollicitudin et faucibus eget, placerat at massa. Quisque quis orci nec tortor ornare suscipit. Phasellus posuere id odio eu porta. Pellentesque ex dui, accumsan id libero a, varius fringilla purus. Duis odio lacus, tincidunt in vulputate vel, ullamcorper sed arcu. Quisque vehicula purus vitae elit feugiat, non viverra sapien ullamcorper. Suspendisse ac nibh gravida, aliquet erat eu, ultrices arcu. Sed scelerisque magna in molestie imperdiet.</p>
+        
+            <p>Hello My name is Blake. Do you have the same problem I have where you can never find the correct
+                LEGO brick to finish your newest creation? Well I am here to tell you that on www.buyblakesbricks.com you can
+                (you guessed it) buy my LEGO bricks. Every brick on this site has been cleaned and carefully inspected. When 
+                you order form www.buyblakesbricks.com each package is shipped with love and care and the hope that LEGO
+                brings you as much joy as it has for me though out the years.
+                </p>
+            <p>This website was created for a group project for the University of Minnesota Coding Bootcamp.</p>
         </div>
         
     )
