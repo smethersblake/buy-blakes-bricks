@@ -48,11 +48,12 @@ function BrickLists() {
                         quantity={bricks.quantity}
                         price={bricks.price}
                         color_id={bricks.color_id}
-                            color_name={bricks.color_name}
-                            rgb={bricks.rgb}
-                            is_trans={bricks.is_trans}
-                            />
-                            ))}
+
+                        color_name={bricks.color_name}
+                        rgb={bricks.rgb}
+                        is_trans={bricks.is_trans}
+                        />
+                    ))}
                 </div>
             ) : (
                 <h2>You haven't added any Bricks yet!</h2>
