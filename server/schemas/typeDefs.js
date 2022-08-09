@@ -60,6 +60,6 @@ const typeDefs = gql`
     addUser(username: String!, email: String!, password: String!): Auth
     createCart(id: String, id2: ID): User
     addToCart(_id: ID, brickId: ID): Cart
-    
+    removeBrickFromInv(_id:ID, brickQuantity: Int): Brick
     }`
 module.exports = typeDefs;

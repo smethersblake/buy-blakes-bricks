@@ -61,6 +61,17 @@ const resolvers = {
                     )
             
                 return cart
+        },
+        removeBrickFromInv: async (parent, args) =>
+        {
+            // const cart = await Cart.findOne()
+            const brick = await Brick.findOneAndUpdate(
+                { _id: args._id },
+                { $set: { quantity: args.brickQuantity } },
+                { new: true }
+                
+                )
+                return brick
         }
     }
     }
