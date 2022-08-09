@@ -52,5 +52,19 @@ export function pluralize(name, count) {
         };
       };
     });
+}
+export function match (brickId)
+{
+  console.log('working')
+  var array = []
+  array = JSON.parse(localStorage.getItem('BrickCart')) || []
+
+  if (!array.includes(brickId))
+  {
+    array.push(brickId)
+    localStorage.setItem('BrickCart', JSON.stringify(array))
+    console.log(array)
+  }
+  console.log(brickId)
   }
   
