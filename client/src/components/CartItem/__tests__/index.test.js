@@ -15,5 +15,5 @@ describe("CartItem component", () => {
    it("matches snapshot", () => {
       const { asFragment } = render(<CartItem />);
       expect(asFragment()).toMatchSnapshot();
-   })
+   });
 });

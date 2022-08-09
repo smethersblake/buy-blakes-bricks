@@ -10,4 +10,10 @@ describe("Header component", () => {
    it("renders", () => {
       render(<Header />);
    });
+
+   // Matches Snapshot
+   it("matches snapshot", () => {
+      const { asFragment } = render(<Header />);
+      expect(asFragment()).toMatchSnapshot();
+   })
 });
