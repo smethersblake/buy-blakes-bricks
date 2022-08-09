@@ -10,4 +10,10 @@ describe("About component", () => {
    it("renders", () => {
       render(<About />);
    });
+
+   // Matches Snapshot
+   it("matches snapshot", ()=> {
+      const { asFragment } = render(<About />);
+      expect(asFragment()).toMatchSnapshot();
+   });
 });
