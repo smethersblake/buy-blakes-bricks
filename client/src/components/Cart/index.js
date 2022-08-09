@@ -4,16 +4,33 @@ import Auth from "../../utils/auth";
 import './style.css'
 import { useStoreContext } from "../../utils/GlobalState";
 import { Link } from 'react-router-dom';
+import { loadStripe } from '@stripe/stripe-js';
+import {QUERY_CHECKOUT} from '../../utils/queries'
+import { useLazyQuery } from '@apollo/client';
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
-  
+  const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
   function calculateTotal() {
       let sum = 0;
       state.cart.forEach(item => {
           sum += item.price * item.purchaseQuantity;
       });
       return sum.toFixed(2)
+  }
+
+  function submitCheckout() {
+    const productIds = [];
+
+    state.cart.forEach((item) => {
+      for (let i = 0; i < item.purchaseQuantity; i++) {
+        productIds.push(item._id);
+      }
+    });
+
+    getCheckout({
+      variables: { products: productIds },
+    });
   }
 
   return (
@@ -30,7 +47,7 @@ const Cart = () => {
               <strong>Total: ${calculateTotal()}</strong>
             </div>
               {/* { Auth.loggedIn() ?
-                  <button className="bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded">
+                  <button onClick={submitCheckout} className="bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded">
                   Checkout
                   </button>
                   :
