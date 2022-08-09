@@ -60,19 +60,6 @@ function App() {
             </div>
             <Footer />
           </StoreProvider>
-          {/* <Header />
-          <div>
-            <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/login' element={<Login />} />
-              <Route path='/signup' element={<Signup />} />
-              <Route path='/about' element={<About />} />
-              <Route path='/contact' element={<Contact />} />
-              <Route path='/cart' element={<Cart />} />
-              
-            </Routes>
-          </div>
-          <Footer /> */}
         </div>
       </Router>
     </ApolloProvider>

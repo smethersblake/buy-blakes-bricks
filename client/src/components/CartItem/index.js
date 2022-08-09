@@ -30,8 +30,9 @@ const CartItem = ({ item }) => {
   }
 
   return (
-    <div className="flex-row">
-      <div>
+    
+    <div className="flex flex-col items-center mx-auto bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+      <div className="mr-2">
         <img
           src={item.part_img_url}
           alt=""
@@ -39,7 +40,10 @@ const CartItem = ({ item }) => {
       </div>
       <div>
         <div>
-          <h3>{item.name}</h3>
+          <h2 className="font-extrabold text-lg">{item.name}</h2>
+        </div>
+        <div className="py-2">
+          <h6>{item.color_name}</h6>
           <h6>${item.price}</h6>
         </div>
         <div>
