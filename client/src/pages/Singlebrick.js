@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import {Link, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { useStoreContext } from '../utils/GlobalState';
-import { UPDATE_BRICKS } from '../utils/actions';
+import { UPDATE_BRICKS, ADD_TO_CART, UPDATE_CART_QUANTITY, REMOVE_FROM_CART } from '../utils/actions';
 import { QUERY_BRICKS } from '../utils/queries';
 import { pluralize } from "../utils/helpers"
 
@@ -27,6 +27,13 @@ function Singlebrick() {
         }
     }, [getBricks, data, dispatch, id]);
 
+    const addToCart = () => {
+        dispatch({
+          type: ADD_TO_CART,
+          getBricks: { ...currentBrick, purchaseQuantity: 1 }
+        });
+      };
+
     return (
         <>
             {currentBrick ? (
@@ -43,6 +50,7 @@ function Singlebrick() {
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Translucent: {currentBrick.is_trans}</p>
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Quantity: {currentBrick.quantity}{pluralize(" brick", currentBrick.quantity)}</p>
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Price: {currentBrick.price}</p>
+                                <button className="bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded"onClick={addToCart}>Add to cart</button>
                             </div> 
                         </div>
                     </div>
