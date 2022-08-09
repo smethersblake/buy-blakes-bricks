@@ -20,7 +20,7 @@ function Contact() {
          <div>
             <ul className='flex mb-4'>
                 
-                <li className='w-full h-12 text-center '><strong>Email:</strong> sample@sample.com</li>
+                <li className='w-full h-12 text-center '><strong>Email:</strong> <a href="mailto:buyblakesbricks@gmail.com">buyblakesbricks@gmail.com</a></li>
             </ul>
          </div>
         </div>

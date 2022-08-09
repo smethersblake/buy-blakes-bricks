@@ -3,7 +3,15 @@ import {
     UPDATE_CURRENT_SEARCH,
     UPDATE_CATEGORIES,
     UPDATE_CURRENT_CATEGORY,
-    UPDATE_BRICKS
+    UPDATE_BRICKS,
+    ADD_MULTIPLE_TO_CART,
+    ADD_TO_CART,
+    UPDATE_CART_QUANTITY,
+    REMOVE_FROM_CART,
+    CLEAR_CART,
+    TOGGLE_CART,
+    ADD_BRICK_TO_CART
+
 } from './actions';
 import { useReducer } from 'react';
 
@@ -35,100 +43,57 @@ export const reducer = (state, action) => {
                 ...state,
                 getBricks: [...action.getBricks],
             };
-        default:
-            return state;
-    }
-};
+        case ADD_TO_CART:
+            return {
+                ...state,
+                cartOpen: true,
+                cart: [...state.cart, action.getBricks],
+            };
+        case ADD_MULTIPLE_TO_CART:
+        return {
+            ...state,
+            cart: [...state.cart, ...action.getBricks],
+        };
 
-// export function useBrickReducer(initialState) {
-//     return useReducer(reducer, initialState)
-// import { useReducer } from "react";
-// import {
-//   UPDATE_PRODUCTS,
-//   ADD_TO_CART,
-//   UPDATE_CART_QUANTITY,
-//   REMOVE_FROM_CART,
-//   ADD_MULTIPLE_TO_CART,
-//   UPDATE_CATEGORIES,
-//   UPDATE_CURRENT_CATEGORY,
-//   CLEAR_CART,
-//   TOGGLE_CART
-// } from "./actions";
+        case UPDATE_CART_QUANTITY:
+        return {
+            ...state,
+            cartOpen: true,
+            cart: state.cart.map(bricks => {
+            if (action._id === bricks._id) {
+                bricks.purchaseQuantity = action.purchaseQuantity
+            }
+            return bricks
+            })
+        };
 
-// export const reducer = (state, action) => {
-//   switch (action.type) {
-//     case UPDATE_PRODUCTS:
-//       return {
-//         ...state,
-//         products: [...action.products],
-//       };
+        case REMOVE_FROM_CART:
+        let newState = state.cart.filter(brick => {
+            return brick._id !== action._id;
+        });
 
-//     case ADD_TO_CART:
-//       return {
-//         ...state,
-//         cartOpen: true,
-//         cart: [...state.cart, action.product],
-//       };
+        return {
+            ...state,
+            cartOpen: newState.length > 0,
+            cart: newState
+        };
 
-//     case ADD_MULTIPLE_TO_CART:
-//       return {
-//         ...state,
-//         cart: [...state.cart, ...action.products],
-//       };
+        case CLEAR_CART:
+        return {
+            ...state,
+            cartOpen: false,
+            cart: []
+        };
 
-//     case UPDATE_CART_QUANTITY:
-//       return {
-//         ...state,
-//         cartOpen: true,
-//         cart: state.cart.map(product => {
-//           if (action._id === product._id) {
-//             product.purchaseQuantity = action.purchaseQuantity
-//           }
-//           return product
-//         })
-//       };
-
-//     case REMOVE_FROM_CART:
-//       let newState = state.cart.filter(product => {
-//         return product._id !== action._id;
-//       });
-
-//       return {
-//         ...state,
-//         cartOpen: newState.length > 0,
-//         cart: newState
-//       };
-
-//     case CLEAR_CART:
-//       return {
-//         ...state,
-//         cartOpen: false,
-//         cart: []
-//       };
-
-//     case TOGGLE_CART:
-//       return {
-//         ...state,
-//         cartOpen: !state.cartOpen
-//       };
-
-//     case UPDATE_CATEGORIES:
-//       return {
-//         ...state,
-//         categories: [...action.categories],
-//       };
-
-//     case UPDATE_CURRENT_CATEGORY:
-//       return {
-//         ...state,
-//         currentCategory: action.currentCategory
-//       }
-
-//     default:
-//       return state;
-//   }
-// };
-
+        case TOGGLE_CART:
+        return {
+            ...state,
+            cartOpen: !state.cartOpen
+        };
+            default:
+                return state;
+        }
+    };
 export function useBrickReducer(initialState) {
   return useReducer(reducer, initialState)
 }

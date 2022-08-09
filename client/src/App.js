@@ -16,6 +16,7 @@ import Signup from "./pages/Signup"
 import About from './components/About'
 import Contact from './components/Contact'
 import Cart from './components/Cart'
+import BrickList from "./pages/BrickList";
 import { setContext } from "@apollo/client/link/context";
 import { StoreProvider } from "./utils/GlobalState";
 
@@ -37,11 +38,12 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
+
 function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div>
+        <div className="flex flex-col min-h-screen bg-slate-200">
           <StoreProvider>
             <Header />
             <div>
@@ -53,6 +55,7 @@ function App() {
                 <Route path="/bricks/:id" element={<Singlebrick />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/cart' element={<Cart />} />
+                <Route path={`/bricklist/:id`} element={<BrickList />}/>
               </Routes>
             </div>
             <Footer />
