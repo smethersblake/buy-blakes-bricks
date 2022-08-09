@@ -53,25 +53,12 @@ const resolvers = {
             const token = signToken(user);
                 return { token, user };
         },
-        addToCart: async (parent, args, context) =>
-        {
-            // need to update to context.user.cart_id for cart id
-            const brick = await Brick.findOne({ _id: args.brickId })
-            const cart = await Cart.findOneAndUpdate(
-                { email: args.email },
-                { $set: { bricks: brick  } }
-                    )
-            
-                return cart
-        },
         removeBrickFromInv: async (parent, args) =>
         {
-            // const cart = await Cart.findOne()
             const brick = await Brick.findOneAndUpdate(
                 { _id: args._id },
                 { $set: { quantity: args.brickQuantity } },
                 { new: true }
-                
                 )
                 return brick
         }

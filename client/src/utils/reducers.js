@@ -9,7 +9,8 @@ import {
     UPDATE_CART_QUANTITY,
     REMOVE_FROM_CART,
     CLEAR_CART,
-    TOGGLE_CART
+    TOGGLE_CART,
+    ADD_BRICK_TO_CART
 
 } from './actions';
 import { useReducer } from 'react';
@@ -48,7 +49,6 @@ export const reducer = (state, action) => {
                 cartOpen: true,
                 cart: [...state.cart, action.getBricks],
             };
-
         case ADD_MULTIPLE_TO_CART:
         return {
             ...state,

@@ -2,20 +2,17 @@ import React, { useEffect, useState } from 'react';
 import {Link, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { useStoreContext } from '../utils/GlobalState';
-import { UPDATE_BRICKS, ADD_TO_CART, UPDATE_CART_QUANTITY, REMOVE_FROM_CART } from '../utils/actions';
+import { UPDATE_BRICKS, ADD_TO_CART, UPDATE_CART_QUANTITY, REMOVE_FROM_CART, ADD_BRICK_TO_CART } from '../utils/actions';
 import { QUERY_BRICKS } from '../utils/queries';
 import { pluralize } from "../utils/helpers"
+import {match} from '../utils/helpers'
 
 function Singlebrick() {
     const [state, dispatch] = useStoreContext();
     const { id } = useParams();
-
     const [currentBrick, setCurentBrick] = useState({});
-
     const { loading, data } = useQuery(QUERY_BRICKS);
-
     const { getBricks } = state;
-
     useEffect(() => {
         if (getBricks.length) {
             setCurentBrick(getBricks.find((bricks) => bricks._id === id));
@@ -25,14 +22,16 @@ function Singlebrick() {
                 getBricks: data.getBricks
             })
         }
+        
     }, [getBricks, data, dispatch, id]);
-
     const addToCart = () => {
         dispatch({
           type: ADD_TO_CART,
-          getBricks: { ...currentBrick, purchaseQuantity: 1 }
+            getBricks: { ...currentBrick, purchaseQuantity: 1 }
         });
-      };
+        match(currentBrick._id)
+    };
+
 
     return (
         <>
