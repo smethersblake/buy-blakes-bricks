@@ -10,7 +10,7 @@ function Singlebrick() {
     const [state, dispatch] = useStoreContext();
     const { id } = useParams();
 
-    const [currentBrick, setCurentBrick] = useState({});
+    const [currentBrick, setCurrentBrick] = useState({});
 
     const { loading, data } = useQuery(QUERY_BRICKS);
 
@@ -18,7 +18,7 @@ function Singlebrick() {
 
     useEffect(() => {
         if (getBricks.length) {
-            setCurentBrick(getBricks.find((bricks) => bricks._id === id));
+            setCurrentBrick(getBricks.find((bricks) => bricks._id === id));
         } else if (data) {
             dispatch({
                 type: UPDATE_BRICKS,
@@ -50,7 +50,7 @@ function Singlebrick() {
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Translucent: {currentBrick.is_trans}</p>
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Quantity: {currentBrick.quantity}{pluralize(" brick", currentBrick.quantity)}</p>
                                 <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Price: {currentBrick.price}</p>
-                                <button className="bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded"onClick={addToCart}>Add to cart</button>
+                                <button className="bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded" onClick={addToCart}>Add to cart</button>
                             </div> 
                         </div>
                     </div>

@@ -10,4 +10,10 @@ describe("Contact component", () => {
    it("renders", () => {
       render(<Contact />);
    });
+
+   // Matches Snapshot
+   it("matches snapshot", () => {
+      const { asFragment } = render(<Contact />);
+      expect(asFragment()).toMatchSnapshot();
+   });
 });
