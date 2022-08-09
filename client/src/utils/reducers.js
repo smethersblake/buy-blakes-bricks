@@ -9,7 +9,7 @@ import {
     UPDATE_CART_QUANTITY,
     REMOVE_FROM_CART,
     CLEAR_CART,
-    TOGGLE_CART
+    // TOGGLE_CART
 
 } from './actions';
 import { useReducer } from 'react';
@@ -85,11 +85,11 @@ export const reducer = (state, action) => {
             cart: []
         };
 
-        case TOGGLE_CART:
-        return {
-            ...state,
-            cartOpen: !state.cartOpen
-        };
+        // case TOGGLE_CART:
+        // return {
+        //     ...state,
+        //     cartOpen: !state.cartOpen
+        // };
             default:
                 return state;
         }

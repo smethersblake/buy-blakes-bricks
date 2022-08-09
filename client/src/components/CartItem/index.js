@@ -33,12 +33,15 @@ const CartItem = ({ item }) => {
     <div className="flex-row">
       <div>
         <img
-          src={`/images/${item.image}`}
+          src={item.part_img_url}
           alt=""
         />
       </div>
       <div>
-        <div>{item.name}, ${item.price}</div>
+        <div>
+          <h3>{item.name}</h3>
+          <h6>${item.price}</h6>
+        </div>
         <div>
           <span>Qty:</span>
           <input

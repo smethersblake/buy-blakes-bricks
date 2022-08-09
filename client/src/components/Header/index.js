@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LEGO from '../../pages/assets/890399.jpg'
+import Cart from '../Cart';
 
 function Header() {
     return (
@@ -12,7 +13,7 @@ function Header() {
                         <div className="pt-8">
                             <Link to="/login" className='text-2xl pr-5'> Login</Link>
                             <Link to="/signup" className='text-2xl pr-5'>Signup </Link>
-                            <Link to="/cart" className='text-2xl'>🛍️</Link>
+                            <Link to="/cart" className='text-2xl pr-5'><span role="img" aria-label="trash">🛒</span></Link>
                         </div>
                     </div>
                     <div className="absolute top-0 right-0 flex w-full h-full">
