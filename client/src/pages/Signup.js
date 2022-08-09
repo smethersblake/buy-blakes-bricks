@@ -38,7 +38,7 @@ const Signup = () => {
   };
 
   return (
-    <div className='container my-1'>
+    <div className='ml-10'>
       <Link to='/login' className='text-sm pr-4'>
         ← Go to Login
       </Link>
