@@ -11,6 +11,7 @@ const Cart = () => {
     <div>
       <div>
         <Link to="/" className="text-sm">
+          ← Go Home
         </Link>
       </div>
       <div class="orderCheckout">
