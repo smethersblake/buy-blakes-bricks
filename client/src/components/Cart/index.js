@@ -1,6 +1,7 @@
 import React from "react";
 import CartItem from "../CartItem";
 import Auth from "../../utils/auth";
+import './style.css'
 import { useStoreContext } from "../../utils/GlobalState";
 import { TOGGLE_CART } from "../../utils/actions";
 import { Link } from 'react-router-dom';
@@ -29,31 +30,40 @@ const Cart = () => {
       return sum.toFixed(2)
   }
   return (
-    <div>
-       <Link to="/" className='text-sm'>← Go Home</Link>
-       <div className="cart">
-      <div className="close">[close]</div>
-      <h2>Shopping Cart</h2>
-      <div>
-        <p>cart items</p> 
+    <div className="container items-center mx-auto p-36">
+       <Link to="/" className='bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded'>← Go Home</Link>
+       <div className="cart flex flex-col items-center">
+        <div className="close" onClick={toggleCart}>[close]</div>
+        <h2 className="text-5xl text-bold">Shopping Cart</h2>
+        {state.cart.length ? (
+          <div>
+            {state.cart.map(item => (
+              <CartItem key={item._id} item={item} />
+            ))}
+            <div className="flex-row space-between">
+              <strong>Total: ${calculateTotal()}</strong>
+              {
+              Auth.loggedIn() ?
+                <div clasName="items-left">
+                  <button className="bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded">
+                  Checkout
+                  </button>
+                </div>  
+                  :
+                  <span>(log in to check out)</span>
+              }
+            </div>
+        </div>    
+        ) : (
+          <h3>
+            <span rorole="img" aria-label="shocked">
+            😱
+            </span>
+            You haven't added anything to your cart yet!
+          </h3>
+        )}
       </div>
-      <div>
-     </div>
-     
-    </div>
-    <div>
-        <ul className='flex mb-4'>
-            <li className='w-full h-12 text-center '><strong>Phone:</strong> 555-555-55555</li>
-            
-        </ul>
-     </div>
-     <div>
-        <ul className='flex mb-4'>
-            
-            <li className='w-full h-12 text-center '><strong>Email:</strong> sample@sample.com</li>
-        </ul>
-     </div>
-    </div>
+      </div>
     
 )
  
