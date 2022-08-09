@@ -49,6 +49,12 @@ query($getCategoriesId: Int) {
         is_trans
     }
   }`
-
+  export const QUERY_CHECKOUT = gql`
+  query getCheckout($cart: [ID]!) {
+    checkout(cart: $products) {
+      session
+    }
+  }
+`;
 
 
