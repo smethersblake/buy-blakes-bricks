@@ -1,6 +1,7 @@
 import React from 'react';
 import { useStoreContext } from "../../utils/GlobalState";
 import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
+import { isNamedType } from 'graphql';
 
 const CartItem = ({ item }) => {
 
@@ -33,7 +34,7 @@ const CartItem = ({ item }) => {
     <div className="flex-row">
       <div>
         <img
-          src={`/images/${item.image}`}
+          src={item.image}
           alt=""
         />
       </div>
