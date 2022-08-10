@@ -4,7 +4,7 @@ import Auth from "../../utils/auth";
 import './style.css'
 import { useStoreContext } from "../../utils/GlobalState";
 import { Link } from 'react-router-dom';
-import { loadStripe } from '@stripe/stripe-js';
+// import { loadStripe } from '@stripe/stripe-js';
 import {QUERY_CHECKOUT} from '../../utils/queries'
 import { useLazyQuery } from '@apollo/client';
 

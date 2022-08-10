@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import LEGO from '../../pages/assets/890399.jpg'
 import auth from '../../utils/auth';
 import Auth from "../../utils/auth";
-import Cart from '../Cart';
+
 
 function Header() {
 
