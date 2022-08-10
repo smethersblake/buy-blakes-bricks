@@ -16,6 +16,7 @@ export const QUERY_GET_BRICKS = gql`
         color_name: String
         rgb: String
         is_trans: Boolean
+        purchaseQuantity: Int
         }
     }
 `;
@@ -47,6 +48,7 @@ query($getCategoriesId: Int) {
          color_name
         rgb
         is_trans
+        purchaseQuantity
     }
   }`
   export const QUERY_CHECKOUT = gql`

@@ -1,5 +1,6 @@
 import React, { createContext, useContext } from 'react';
 import { useBrickReducer } from './reducers';
+import Auth from './auth'
 
 const StoreContext = createContext();
 const { Provider } = StoreContext;
@@ -9,7 +10,7 @@ const StoreProvider = ({ value = [], ...props}) => {
         getBricks: [],
         currentSearch: '',
         getCategories: [],
-        cart: []
+        cart: Auth.getLocalCart()
     });
     return <Provider value={[state, dispatch]} {...props} />
 };

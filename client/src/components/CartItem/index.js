@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStoreContext } from "../../utils/GlobalState";
 import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
-import { idbPromise } from "../../utils/helpers";
+import { idbPromise, updateCartQuanity } from "../../utils/helpers";
 
 const CartItem = ({ item }) => {
 
@@ -29,6 +29,7 @@ const CartItem = ({ item }) => {
         _id: item._id,
         purchaseQuantity: parseInt(value)
       });
+      updateCartQuanity(value, item._id)
     }
   }
 

@@ -60,6 +60,7 @@ function BrickList() {
                             color_name={bricks.color_name}
                             rgb={bricks.rgb}
                             is_trans={bricks.is_trans}
+                            purchaseQuantity={bricks.purchaseQuantity}
                             />
                             ))}
                 </div>
