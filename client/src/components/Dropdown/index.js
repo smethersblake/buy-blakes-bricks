@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useQuery } from '@apollo/client';
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { useStoreContext } from '../../utils/GlobalState';
@@ -37,7 +37,7 @@ function DropdownTab ()
             <Dropdown id='dropdown' label="All Categories" class="bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded" data-dropdown-toggle="dropdownNavbar">
                 {getCategories.map((item) => (
                     
-                        <Dropdown.Item class="overflow-y-scroll h-96"
+                        <Dropdown.Item
                         key={item.id}
                         onClick={() => {
                             handleClick(item.id);

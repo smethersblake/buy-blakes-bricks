@@ -38,16 +38,11 @@ const Signup = () => {
   };
 
   return (
-    <div className='ml-10'>
-      <Link to='/login' className='text-sm pr-4'>
-        ← Go to Login
-      </Link>
-      <Link to="/" className='text-sm'>← Home</Link>
-
-      <h2 className='text-xl'>Sign Up</h2>
-
+    <div className='container items-center mx-auto p-36'>
+      <div className="flex flex-col items-center">
+      <h2 className='text-5xl font-bold'>Sign Up</h2>
       <form onSubmit={handleFormSubmit}>
-        <div className='flex-row space-between my-2'>
+        <div className='flex-row space-between my-2 py-2'>
           <label
             htmlFor='username'
             className='mb-2 text-sm font-medium text-gray-900  dark:text-gray-300 pr-3'
@@ -106,6 +101,7 @@ const Signup = () => {
           Submit
         </button>
       </form>
+      </div>
 
       {error && <div className='text-red-700'>Sign up failed</div>}
     </div>

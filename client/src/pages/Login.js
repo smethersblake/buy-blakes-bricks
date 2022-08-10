@@ -30,40 +30,40 @@ function Login(props) {
   };
 
   return (
-    <div className="ml-10">
-      <Link to="/signup" className='text-sm pr-4'>← Go to Signup</Link>
-      <Link to="/" className='text-sm'>← Home</Link>
-      <h2 className='text-xl'>Login</h2>
-      <form onSubmit={handleFormSubmit}>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="email" className="mb-2 text-sm font-medium text-gray-900  dark:text-gray-300 pr-8">Email: </label>
-          <input className='rounded-full'
-            placeholder="email@test.com"
-            name="email"
-            type="email"
-            id="email"
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex-row space-between my-2">
-          <label htmlFor="pwd" className="mb-2 text-sm font-medium text-gray-900  dark:text-gray-300 pr-2">Password:</label>
-          <input className='rounded-full'
-            placeholder="*****"
-            name="password"
-            type="password"
-            id="pwd"
-            onChange={handleChange}
-          />
-        </div>
-        {error ? (
-          <div>
-            <p className="text-red-700">The provided credentials are incorrect</p>
+    <div className="container items-center mx-auto p-36">
+      <div className="flex flex-col items-center">
+        <h2 className='text-5xl font-bold'>Login</h2>
+        <form onSubmit={handleFormSubmit} className="py-2">
+          <div className="flex-row space-between my-2">
+            <label htmlFor="email" className="mb-2 text-sm font-medium text-gray-900  dark:text-gray-300 pr-8">Email: </label>
+            <input className='rounded-full'
+              placeholder="email@test.com"
+              name="email"
+              type="email"
+              id="email"
+              onChange={handleChange}
+            />
           </div>
-        ) : null}
-        <div className="flex-row flex-end">
-          <button type="submit" className="inline-flex py-2 px-4  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white bg-green-100 rounded-full">Submit</button>
-        </div>
-      </form>
+          <div className="flex-row space-between my-2">
+            <label htmlFor="pwd" className="mb-2 text-sm font-medium text-gray-900  dark:text-gray-300 pr-2">Password:</label>
+            <input className='rounded-full'
+              placeholder="*****"
+              name="password"
+              type="password"
+              id="pwd"
+              onChange={handleChange}
+            />
+          </div>
+          {error ? (
+            <div>
+              <p className="text-red-700">The provided credentials are incorrect</p>
+            </div>
+          ) : null}
+          <div className="flex-row flex-end">
+            <button type="submit" className="inline-flex py-2 px-4  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white bg-green-100 rounded-full">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
