@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Contact component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container items-center mx-auto p-32"
+  >
+    <div>
+      <h1
+        class="text-5xl text-center"
+      >
+        Contact
+      </h1>
+    </div>
+    <div
+      class="pt-8"
+    >
+      <ul
+        class="flex mb-4"
+      >
+        <li
+          class="w-full h-12 text-center "
+        >
+          <strong>
+            Phone:
+          </strong>
+           555-555-55555
+        </li>
+      </ul>
+      <ul>
+        <li
+          class="w-full h-12 text-center "
+        >
+          <strong>
+            Email:
+          </strong>
+           
+          <a
+            href="mailto:buyblakesbricks@gmail.com"
+          >
+            buyblakesbricks@gmail.com
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</DocumentFragment>
+`;
