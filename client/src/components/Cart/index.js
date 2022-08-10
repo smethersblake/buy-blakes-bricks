@@ -48,9 +48,10 @@ const Cart = () => {
               <strong>Total: ${calculateTotal()}</strong>
             </div>
               { Auth.loggedIn() ?
-                  <button onClick={submitCheckout} className="bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded">
-                  Checkout
-                  </button>
+                 <Link to = "/confirm">   <button className="bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded">
+                 Checkout
+                 </button>
+                 </Link>
                   :
                   <span>(log in to check out)</span>
               }
