@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { loadStripe } from '@stripe/stripe-js';
 import {QUERY_CHECKOUT} from '../../utils/queries'
 import { useLazyQuery } from '@apollo/client';
+import Confirm from "../Confirm";
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
@@ -46,13 +47,13 @@ const Cart = () => {
             <div className="flex-row space-between">
               <strong>Total: ${calculateTotal()}</strong>
             </div>
-              {/* { Auth.loggedIn() ?
+              { Auth.loggedIn() ?
                   <button onClick={submitCheckout} className="bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded">
                   Checkout
                   </button>
                   :
                   <span>(log in to check out)</span>
-              } */}
+              }
         </div>    
         ) : (
           <h3>

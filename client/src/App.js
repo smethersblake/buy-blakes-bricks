@@ -56,7 +56,6 @@ function App() {
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/cart' element={<Cart />} />
                 <Route path='/confirm' element={<Confirm />} />
-                
                 <Route path={`/bricklist/:id`} element={<BrickList />} />
               </Routes>
             </div>
