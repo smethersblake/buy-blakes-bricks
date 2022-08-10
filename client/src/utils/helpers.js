@@ -59,18 +59,23 @@ export function match (brickId)
   var array = []
   array = JSON.parse(localStorage.getItem('BrickCart')) || []
 
-  if (!array.includes(brickId))
+
+  if (!array.filter(ID => ID._id === brickId._id).length > 0)
   {
+    console.log(array)
     array.push(brickId)
-    localStorage.setItem('BrickCart', JSON.stringify(array))
+      localStorage.setItem('BrickCart', JSON.stringify(array))
+          console.log(array)
+
   }
+  
 
 }
 export function cartQuantity (brickId)
 {
   const brick = [] = JSON.parse(localStorage.getItem('BrickCart'))
   // console.log(brick)
-  console.log(brickId._id)
+  // console.log(brickId._id)
   for (let i = 0; i < brick.length; i++) {
     if (brick[i]._id === brickId._id)
     {
@@ -87,6 +92,20 @@ export function updateCartQuanity (value, brickId)
     if (brick[i]._id === brickId)
     {
       brick[i].purchaseQuantity = parseInt(value);
+      localStorage.setItem('BrickCart', JSON.stringify(brick))
+    }
+  }
+}
+export function removeFromStorage (item)
+{
+  const brick = [] = JSON.parse(localStorage.getItem('BrickCart'))
+  for (let i = 0; i < brick.length; i++)
+  {
+    if (brick[i]._id === item._id)
+    {
+      brick.splice(i, 1)
+      console.log(i)
+      console.log(brick)
       localStorage.setItem('BrickCart', JSON.stringify(brick))
     }
   }
