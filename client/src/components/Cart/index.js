@@ -14,7 +14,7 @@ const Cart = () => {
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
   function calculateTotal() {
       let sum = 0;
-      state.cart.forEach(item => {
+      JSON.parse(localStorage.getItem('BrickCart')).forEach(item => {
           sum += item.price * item.purchaseQuantity;
       });
       return sum.toFixed(2)

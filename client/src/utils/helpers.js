@@ -83,6 +83,7 @@ export function cartQuantity (brickId)
       localStorage.setItem('BrickCart', JSON.stringify(brick))
     }
   }
+  WOW()
 }
 export function updateCartQuanity (value, brickId)
 {
@@ -95,6 +96,7 @@ export function updateCartQuanity (value, brickId)
       localStorage.setItem('BrickCart', JSON.stringify(brick))
     }
   }
+  WOW()
 }
 export function removeFromStorage (item)
 {
@@ -109,5 +111,21 @@ export function removeFromStorage (item)
       localStorage.setItem('BrickCart', JSON.stringify(brick))
     }
   }
+  WOW()
   }
-  
+export function WOW ()
+{
+  const wow = "https://owen-wilson-wow-api.herokuapp.com/wows/random"
+  fetch(wow).then(function (response)
+  {
+    if (response.ok)
+    {
+      response.json().then(function (data)
+      {
+        console.log(data[0].audio)
+        var a = new Audio(data[0].audio)
+        a.play()
+        })
+      }
+    })
+  }
