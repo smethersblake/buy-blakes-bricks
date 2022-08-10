@@ -19,7 +19,6 @@ const Cart = () => {
       });
       return sum.toFixed(2)
   }
-
   function submitCheckout() {
     const productIds = [];
 
@@ -41,7 +40,7 @@ const Cart = () => {
         <h2 className="text-5xl text-bold">Shopping Cart</h2>
         {state.cart.length ? (
           <div>
-            {state.cart.map(item => (
+            {JSON.parse(localStorage.getItem('BrickCart')).map(item => (
               <CartItem key={item._id} item={item} />
             ))}
             <div className="flex-row space-between">
