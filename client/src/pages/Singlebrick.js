@@ -16,7 +16,7 @@ function Singlebrick() {
     const { loading, data } = useQuery(QUERY_BRICKS);
 
     const { getBricks, currentCategory } = state;
-
+    
     useEffect(() => {
         if (getBricks.length) {
             setCurrentBrick(getBricks.find((bricks) => bricks._id === id));

@@ -5,7 +5,6 @@ import { UPDATE_BRICKS } from '../utils/actions';
 import BrickItem from '../../src/components/BrickItem';
 import { QUERY_BRICKS } from '../utils/queries';
 import { Link } from 'react-router-dom';
-import DropdownTab from '../components/Dropdown';
 
 function BrickList() {
     const [state, dispatch] = useStoreContext();
@@ -32,14 +31,15 @@ function BrickList() {
     }
 
     return (
-        <div className=" bg-slate-200">
+        <div>
             <div className="container items-center mx-auto p-36">
-                <div>
+                <div className="flex flex-col items-start">
                     <Link to={'/'}>
-
-                    <h2 className='bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded'>Different Category</h2>
+                    <div className="bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded">
+                        <h2>Different Category</h2>
+                    </div>
                     </Link>
-                </div>
+                
                     {/* <DropdownTab></DropdownTab> */}
                 <div>
             <h2 className="text-6xl text-bold">Blake's Bricks:</h2>
@@ -68,33 +68,9 @@ function BrickList() {
                 )}
                 </div>
                 </div>
+            </div>
         </div>
     )
 }
 
 export default BrickList;
-
-
-
-<div className="bg-slate-200">
-            <div className="container items-center mx-auto pb-64 bg-slate-200">
-                <div>
-                    <DropdownTab></DropdownTab>
-                {/* <Dropdown label="All Categories" className="bg-neutral-500">
-                        {getCategories.map((item) => (
-                    <Link to={`/${item.id}`}>
-                        <Dropdown.Item 
-                            key={item.id}
-                            onClick={() => {
-                                handleClick(item.id);
-                            }}
-                            >
-                            {item.name}
-                                </Dropdown.Item>
-                                
-                                </Link>
-                                ))}
-                    </Dropdown> */}
-                </div>
-            </div>
-        </div>
