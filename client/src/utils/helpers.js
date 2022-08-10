@@ -55,21 +55,13 @@ export function pluralize(name, count) {
 }
 export function match (brickId)
 {
-  console.log('working')
   var array = []
   array = JSON.parse(localStorage.getItem('BrickCart')) || []
-
-
   if (!array.filter(ID => ID._id === brickId._id).length > 0)
   {
-    console.log(array)
     array.push(brickId)
       localStorage.setItem('BrickCart', JSON.stringify(array))
-          console.log(array)
-
   }
-  
-
 }
 export function cartQuantity (brickId)
 {
@@ -125,8 +117,6 @@ export function removeFromStorage (item)
     if (brick[i]._id === item._id)
     {
       brick.splice(i, 1)
-      console.log(i)
-      console.log(brick)
       localStorage.setItem('BrickCart', JSON.stringify(brick))
     }
   }
@@ -141,7 +131,6 @@ export function WOW ()
     {
       response.json().then(function (data)
       {
-        console.log(data[0].audio)
         var a = new Audio(data[0].audio)
         a.play()
         })

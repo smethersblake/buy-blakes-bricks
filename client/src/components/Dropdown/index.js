@@ -33,7 +33,6 @@ function DropdownTab ()
     }
     return (
         <div>
-
             <Dropdown id='dropdown' label="All Categories" class="bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded" data-dropdown-toggle="dropdownNavbar">
                 {getCategories.map((item) => (
                     
@@ -41,7 +40,6 @@ function DropdownTab ()
                         key={item.id}
                         onClick={() => {
                             handleClick(item.id);
-                                this.setState({})
                             }}
                     >
                         <Link to={`/bricklist/${item.name}`}>
