@@ -37,7 +37,6 @@ const Cart = () => {
     <div className="container items-center mx-auto p-36">
        <Link to="/" className='bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded'>← Go Home</Link>
        <div className="cart flex flex-col items-center">
-        <div className="close" onClick={toggleCart}>[close]</div>
         <h2 className="text-5xl text-bold">Shopping Cart</h2>
         {state.cart.length ? (
           <div>
