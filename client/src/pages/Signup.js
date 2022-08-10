@@ -38,72 +38,72 @@ const Signup = () => {
   };
 
   return (
-    <div className='container items-center mx-auto p-36'>
+    <div className="container items-center mx-auto p-36">
       <div className="flex flex-col items-center">
-      <h2 className='text-5xl font-bold'>Sign Up</h2>
-      <form onSubmit={handleFormSubmit}>
-        <div className='flex-row space-between my-2 py-2'>
-          <label
-            htmlFor='username'
-            className='mb-2 text-sm font-medium text-gray-900  dark:text-gray-300 pr-3'
-          >
-            Username:{" "}
-          </label>
-          <input
-            className=' form-input rounded-full'
-            placeholder='New User'
-            name='username'
-            type='text'
-            id='username'
-            value={formState.username}
-            onChange={handleChange}
-          />
-        </div>
-        <div className='flex-row space-between my-2'>
-          <label
-            htmlFor='email'
-            className='mb-2 text-sm font-medium text-gray-900  dark:text-gray-300 pr-10'
-          >
-            Email:{" "}
-          </label>
-          <input
-            className='form-input rounded-full'
-            placeholder='email@test.com'
-            name='email'
-            type='email'
-            id='email'
-            value={formState.email}
-            onChange={handleChange}
-          />
-        </div>
+        <h2 className="text-5xl font-bold">Sign Up</h2>
+        <form onSubmit={handleFormSubmit}>
+          <div className="flex-row space-between my-2 py-2">
+            <label
+              htmlFor="username"
+              className="mb-2 text-sm font-medium text-gray-900  dark:text-gray-300 pr-3"
+            >
+              Username:{" "}
+            </label>
+            <input
+              className=" form-input rounded-full"
+              placeholder="New User"
+              name="username"
+              type="text"
+              id="username"
+              value={formState.username}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="flex-row space-between my-2">
+            <label
+              htmlFor="email"
+              className="mb-2 text-sm font-medium text-gray-900  dark:text-gray-300 pr-10"
+            >
+              Email:{" "}
+            </label>
+            <input
+              className="form-input rounded-full"
+              placeholder="email@test.com"
+              name="email"
+              type="email"
+              id="email"
+              value={formState.email}
+              onChange={handleChange}
+            />
+          </div>
 
-        <div className='flex-row space-between my-2'>
-          <label
-            htmlFor='password'
-            className='mb-2 text-sm font-medium text-gray-900  dark:text-gray-300 pr-3'
+          <div className="flex-row space-between my-2">
+            <label
+              htmlFor="password"
+              className="mb-2 text-sm font-medium text-gray-900  dark:text-gray-300 pr-3"
+            >
+              Password:{" "}
+            </label>
+            <input
+              className="form-input rounded-full"
+              placeholder="******"
+              name="password"
+              type="password"
+              id="password"
+              value={formState.password}
+              onChange={handleChange}
+            />
+          </div>
+          <button
+            type="submit"
+            className="inline-flex py-2 px-4  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white bg-green-100 rounded-full shadow"
           >
-            Password:{" "}
-          </label>
-          <input
-            className='form-input rounded-full'
-            placeholder='******'
-            name='password'
-            type='password'
-            id='password'
-            value={formState.password}
-            onChange={handleChange}
-          />
-        </div>
-        <button
-          type='submit'
-          className='inline-flex py-2 px-4  hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white bg-green-100 rounded-full shadow'
-        >
-          Submit
-        </button>
-      </form>
+            Submit
+          </button>
+        </form>
       </div>
 
-      {error && <div className='text-red-700'>Sign up failed</div>}
+      {error && <div className="text-red-700">Sign up failed</div>}
     </div>
   );
 };
