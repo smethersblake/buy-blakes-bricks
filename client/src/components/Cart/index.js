@@ -29,13 +29,13 @@ const Cart = () => {
             <div className="flex-row space-between">
               <strong>Total: ${calculateTotal()}</strong>
             </div>
-              {/* { Auth.loggedIn() ?
+              { Auth.loggedIn() ?
                   <button className="bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded">
                   Checkout
                   </button>
                   :
                   <span>(log in to check out)</span>
-              } */}
+              }
         </div>    
         ) : (
           <h3>
