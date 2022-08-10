@@ -5,21 +5,21 @@ import './style.css'
 import { useStoreContext } from "../../utils/GlobalState";
 import { Link } from 'react-router-dom';
 import { loadStripe } from '@stripe/stripe-js';
-import {QUERY_CHECKOUT} from '../../utils/queries'
-import { useLazyQuery } from '@apollo/client';
+// import {QUERY_CHECKOUT} from '../../utils/queries'
+// import { useLazyQuery } from '@apollo/client';
 
-const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
+// const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
-  const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
-  useEffect(() => {
-    if (data) {
-      stripePromise.then((res) => {
-        res.redirectToCheckout({ sessionId: data.checkout.session });
-      });
-    }
-  }, [data]);
+  // const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
+  // useEffect(() => {
+  //   if (data) {
+  //     stripePromise.then((res) => {
+  //       res.redirectToCheckout({ sessionId: data.checkout.session });
+  //     });
+  //   }
+  // }, [data]);
 
   function calculateTotal() {
       let sum = 0;
@@ -29,19 +29,19 @@ const Cart = () => {
       return sum.toFixed(2)
   }
 
-  function submitCheckout() {
-    const productIds = [];
+  // function submitCheckout() {
+  //   const productIds = [];
 
-    state.cart.forEach((item) => {
-      for (let i = 0; i < item.purchaseQuantity; i++) {
-        productIds.push(item._id);
-      }
-    });
+  //   state.cart.forEach((item) => {
+  //     for (let i = 0; i < item.purchaseQuantity; i++) {
+  //       productIds.push(item._id);
+  //     }
+  //   });
 
-    getCheckout({
-      variables: { products: productIds },
-    });
-  }
+  //   getCheckout({
+  //     variables: { products: productIds },
+  //   });
+  // }
 
   return (
     <div className="container items-center mx-auto p-36">
@@ -57,7 +57,7 @@ const Cart = () => {
               <strong>Total: ${calculateTotal()}</strong>
             </div>
               { Auth.loggedIn() ?
-                 <Link to = "/confirmation"> <button onClick={submitCheckout} className="bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded">
+                 <Link to = "/confirmation"> <button  className="bg-transparent hover:bg-neutral-500 text-nuetral-700 font-semibold hover:text-white py-2 px-4 border border-neutral-500 hover:border-transparent rounded">
                   Checkout
                   </button>
                   </Link>
