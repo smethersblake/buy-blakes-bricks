@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 
 function About() {
     return (
-        <div>
-            <Link to="/" className='text-sm'>← Go Home</Link>
-            <div className='flex mb-4'>
+        <div className="container items-center mx-auto p-36">
+            <div className='flex mb-4 pb-4'>
                 <div className='w-full h-12'>
-                    <h1 className='text-5xl text-center'>About</h1>
+                    <h1 className='text-6xl text-center font-bold'>About</h1>
                 </div>
             </div>
         

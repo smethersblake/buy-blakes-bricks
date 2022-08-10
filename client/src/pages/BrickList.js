@@ -32,7 +32,7 @@ function BrickList() {
     }
 
     return (
-        <div className=" bg-slate-200">
+        <div>
             <div className="container items-center mx-auto p-36">
                 <div>
                     <Link to={'/'}>

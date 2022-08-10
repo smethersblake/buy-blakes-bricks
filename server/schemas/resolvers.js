@@ -29,11 +29,14 @@ const resolvers = {
         }
     },
     Mutation: {
-        addUser: async (parent, args) => {
+        addUser: async (parent, args, context) =>
+        {
             const user = await User.create(args);
+            const cart = await Cart.create(args)
+            
             const token = signToken(user);
 
-            return { token, user };
+            return { token, user, cart };
         },
         login: async (parent, { email, password }) => {
             const user = await User.findOne({ email });
@@ -47,20 +50,17 @@ const resolvers = {
             if (!correctPw) {
                 throw new AuthenticationError('Incorrect credentials');
             }
-
             const token = signToken(user);
                 return { token, user };
         },
-        addToCart: async (parent, args, context) =>
+        removeBrickFromInv: async (parent, args) =>
         {
-            // need to update to context.user.cart_id for cart id
-            const brick = await Brick.findOne({ _id: args.brickId })
-            const cart = await Cart.findOneAndUpdate(
+            const brick = await Brick.findOneAndUpdate(
                 { _id: args._id },
-                { $addToSet: { bricks: brick } }
-                    )
-            
-                return cart
+                { $set: { quantity: args.brickQuantity } },
+                { new: true }
+                )
+                return brick
         }
     }
     }
