@@ -74,13 +74,20 @@ export function match (brickId)
 export function cartQuantity (brickId)
 {
   const brick = [] = JSON.parse(localStorage.getItem('BrickCart'))
-  // console.log(brick)
-  // console.log(brickId._id)
+
   for (let i = 0; i < brick.length; i++) {
     if (brick[i]._id === brickId._id)
     {
-      brick[i].purchaseQuantity++;
+      if (brick[i].purchaseQuantity === brick[i].quantity)
+      {
+        alert('Sorry no more available.')
+      }
+      else
+      {
+        brick[i].purchaseQuantity++;
       localStorage.setItem('BrickCart', JSON.stringify(brick))
+      }
+      
     }
   }
   WOW()
@@ -92,6 +99,18 @@ export function updateCartQuanity (value, brickId)
   {
     if (brick[i]._id === brickId)
     {
+      if (brick[i].purchaseQuantity > brick[i].quantity)
+      {
+        alert('Sorry no more available.')
+        value--
+        brick[i].purchaseQuantity = parseInt(value);
+        localStorage.setItem('BrickCart', JSON.stringify(brick))
+      }
+      else
+      {
+        brick[i].purchaseQuantity = parseInt(value);
+        localStorage.setItem('BrickCart', JSON.stringify(brick))
+      }
       brick[i].purchaseQuantity = parseInt(value);
       localStorage.setItem('BrickCart', JSON.stringify(brick))
     }
