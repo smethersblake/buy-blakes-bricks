@@ -23,7 +23,6 @@ function DropdownTab ()
         }
     }, [categoryData, dispatch])
     
-
     const handleClick = id =>
     {
         dispatch({
@@ -32,7 +31,6 @@ function DropdownTab ()
             
         })
     }
-    // this.setState({})
     return (
         <div>
 

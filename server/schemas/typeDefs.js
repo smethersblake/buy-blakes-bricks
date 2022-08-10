@@ -5,7 +5,6 @@ const typeDefs = gql`
         _id: ID
         username: String
         email: String
-        cartId: Cart
     }
     type Color {
         _id: ID
@@ -39,12 +38,13 @@ const typeDefs = gql`
     
     type Cart {
         _id: ID
-        cartEmpty: Boolean
+        username: String
         bricks: [Brick]
     }
     type Auth {
         token: ID
         user: User
+        cart: Cart
     }
     type Query {
         getOneBrick(id: ID): Brick
@@ -58,8 +58,7 @@ const typeDefs = gql`
     type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    createCart(id: String, id2: ID): User
-    addToCart(_id: ID, brickId: ID): Cart
-    
+    createCart: Cart
+    removeBrickFromInv(_id:ID, brickQuantity: Int): Brick
     }`
 module.exports = typeDefs;

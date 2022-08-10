@@ -48,7 +48,6 @@ export const reducer = (state, action) => {
                 cartOpen: true,
                 cart: [...state.cart, action.getBricks],
             };
-
         case ADD_MULTIPLE_TO_CART:
         return {
             ...state,
