@@ -48,6 +48,10 @@ const brickSchema = new Schema({
     },
     is_trans: {
         type: Boolean
+    },
+    purchaseQuantity: {
+        type: Number,
+        default: 0
     }
 })
 

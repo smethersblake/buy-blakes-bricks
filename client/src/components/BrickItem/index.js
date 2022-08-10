@@ -5,7 +5,7 @@ import { useStoreContext } from '../../utils/GlobalState';
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from '../../utils/actions'
 import { StoreProvider } from '../../utils/GlobalState';
 import { useBrickReducer } from '../../utils/reducers';
-import {match} from '../../utils/helpers'
+import {match, cartQuantity} from '../../utils/helpers'
 
 function BrickItem(item) {
     const {
@@ -21,19 +21,21 @@ function BrickItem(item) {
         color_name,
         rgb,
         is_trans,
+        purchaseQuantity,
     } = item;
 
     const [state, dispatch] = useStoreContext();
 
-    // console.log(item)
     const addToCart = () =>
     {
         dispatch({
             type: ADD_TO_CART,
             getBricks: { ...item, purchaseQuantity: 1 }
+            
         }
         )
-        match(item._id)
+        match(item)
+        cartQuantity(item)
     }
     return (
         <div>

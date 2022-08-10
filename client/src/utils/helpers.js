@@ -63,8 +63,32 @@ export function match (brickId)
   {
     array.push(brickId)
     localStorage.setItem('BrickCart', JSON.stringify(array))
-    console.log(array)
   }
-  console.log(brickId)
+
+}
+export function cartQuantity (brickId)
+{
+  const brick = [] = JSON.parse(localStorage.getItem('BrickCart'))
+  // console.log(brick)
+  console.log(brickId._id)
+  for (let i = 0; i < brick.length; i++) {
+    if (brick[i]._id === brickId._id)
+    {
+      brick[i].purchaseQuantity++;
+      localStorage.setItem('BrickCart', JSON.stringify(brick))
+    }
+  }
+}
+export function updateCartQuanity (value, brickId)
+{
+  const brick = [] = JSON.parse(localStorage.getItem('BrickCart'))
+  for (let i = 0; i < brick.length; i++)
+  {
+    if (brick[i]._id === brickId)
+    {
+      brick[i].purchaseQuantity = parseInt(value);
+      localStorage.setItem('BrickCart', JSON.stringify(brick))
+    }
+  }
   }
   

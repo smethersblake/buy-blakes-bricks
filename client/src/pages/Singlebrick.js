@@ -33,7 +33,7 @@ function Singlebrick() {
           type: ADD_TO_CART,
             getBricks: { ...currentBrick, purchaseQuantity: 1 }
         });
-        match(currentBrick._id)
+        match(currentBrick)
     };
 
 
