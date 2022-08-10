@@ -20,3 +20,4 @@ const useStoreContext = () => {
 }
 
 export { StoreProvider, useStoreContext };
+

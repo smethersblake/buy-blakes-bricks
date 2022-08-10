@@ -1,3 +1,6 @@
+// ./src/utils/actions.js
+// Actions constants
+
 export const UPDATE_SEARCH_BRICKS = "UPDATE_SEARCH_BRICKS";
 export const UPDATE_CURRENT_SEARCH = "UPDATE_CURRENT_SEARCH";
 export const UPDATE_CATEGORIES = "UPDATE_CATEGORIES";

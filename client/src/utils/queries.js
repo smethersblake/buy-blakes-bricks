@@ -1,5 +1,6 @@
 import { gql } from '@apollo/client';
 
+// Get Bricks
 export const QUERY_GET_BRICKS = gql`
     query getBricks($name: String) {
         getBricks( name: $name){
@@ -21,6 +22,7 @@ export const QUERY_GET_BRICKS = gql`
     }
 `;
 
+// Categories
 export const QUERY_CATEGORIES = gql`
     {
         getCategories {
@@ -29,6 +31,8 @@ export const QUERY_CATEGORIES = gql`
         }
     }
 `
+
+// Bricks
 export const QUERY_BRICKS = gql`
 query($getCategoriesId: Int) {
     getCategories(id: $getCategoriesId) {
@@ -51,6 +55,8 @@ query($getCategoriesId: Int) {
         purchaseQuantity
     }
   }`
+
+// Checkout
   export const QUERY_CHECKOUT = gql`
   query getCheckout($cart: [ID]!) {
     checkout(cart: $products) {
