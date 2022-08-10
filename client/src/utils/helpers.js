@@ -78,22 +78,14 @@ export function cartQuantity(brickId) {
       if (brick[i].purchaseQuantity > brick[i].quantity)
       {
         alert('Sorry no more available.')
-        // brick[i].purchaseQuantity--
       }
       else
       {
-        // brick[i].purchaseQuantity++;
       localStorage.setItem('BrickCart', JSON.stringify(brick))
       }
       
     }
   }
-  // for (let i = 0; i < brick.length; i++) {
-  //   if (brick[i]._id === brickId._id) {
-  //     brick[i].purchaseQuantity++;
-  //     localStorage.setItem("BrickCart", JSON.stringify(brick));
-  //   }
-  // }
   WOW()
 }
 export function updateCartQuanity (value, brickId)
@@ -116,7 +108,6 @@ export function updateCartQuanity (value, brickId)
         brick[i].purchaseQuantity = parseInt(value);
         localStorage.setItem('BrickCart', JSON.stringify(brick))
       }
-      // brick[i].purchaseQuantity = parseInt(value);
       localStorage.setItem("BrickCart", JSON.stringify(brick));
     }
   }
