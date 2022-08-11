@@ -1,20 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LEGO from '../../pages/assets/890399.jpg'
-import Cart from '../Cart';
+import auth from '../../utils/auth';
+import Auth from "../../utils/auth";
+
 
 function Header() {
+
+    function showNav() {
+        if (auth.loggedIn()) {
+            return (
+                <div className="pt-8">
+                    <Link to="/" onClick={() => Auth.logout()} className='text-2xl pr-5'>Logout</Link>
+                    <Link to="/cart" className='text-2xl pr-5'><span role="img" aria-label="trash">🛒</span></Link>
+                </div>
+            )
+        } else {
+            return (
+                <div className="pt-8">
+                    <Link to="/login" className='text-2xl pr-5'> Login</Link>
+                    <Link to="/signup" className='text-2xl pr-5'>Signup </Link>
+                    <Link to="/cart"  className='text-2xl pr-5'><span role="img" aria-label="trash">🛒</span></Link>
+                </div>
+            )
+        }
+    }
+
     return (
         <header>
             <div className="relative h-64  overflow-hidden bg-neutral-500">
                 <div className="absolute z-30 flex w-full h-full">
                     <div className="relative z-30 w-5/6 px-6 py-8 text-white md:py-10 md:w-1/2">
                         <Link to = "/" className="text-7xl">Buy Blakes Bricks</Link>
-                        <div className="pt-8">
-                            <Link to="/login" className='text-2xl pr-5'> Login</Link>
-                            <Link to="/signup" className='text-2xl pr-5'>Signup </Link>
-                            <Link to="/cart" className='text-2xl pr-5'><span role="img" aria-label="trash">🛒</span></Link>
-                        </div>
+                        {showNav()}
                     </div>
                     <div className="absolute top-0 right-0 flex w-full h-full">
                         <div className="w-1/3 h-full bg-neutral-500"></div>

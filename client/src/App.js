@@ -12,10 +12,11 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Singlebrick from "./pages/Singlebrick";
 import Login from "./pages/Login";
-import Signup from "./pages/Signup"
-import About from './components/About'
-import Contact from './components/Contact'
-import Cart from './components/Cart'
+import Signup from "./pages/Signup";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Cart from "./components/Cart";
+import Confirm from "./components/Confirm"
 import BrickList from "./pages/BrickList";
 import { setContext } from "@apollo/client/link/context";
 import { StoreProvider } from "./utils/GlobalState";
@@ -38,12 +39,11 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-
 function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <div className="flex flex-col min-h-screen bg-slate-200">
+        <div className='flex flex-col min-h-screen bg-slate-200'>
           <StoreProvider>
             <Header />
             <div>
@@ -51,28 +51,16 @@ function App() {
                 <Route path='/' element={<Home />} />
                 <Route path='/login' element={<Login />} />
                 <Route path='/signup' element={<Signup />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/bricks/:id" element={<Singlebrick />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/bricks/:id' element={<Singlebrick />} />
                 <Route path='/contact' element={<Contact />} />
                 <Route path='/cart' element={<Cart />} />
-                <Route path={`/bricklist/:id`} element={<BrickList />}/>
+                <Route path='/confirm' element={<Confirm />} />
+                <Route path={`/bricklist/:id`} element={<BrickList />} />
               </Routes>
             </div>
             <Footer />
           </StoreProvider>
-          {/* <Header />
-          <div>
-            <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/login' element={<Login />} />
-              <Route path='/signup' element={<Signup />} />
-              <Route path='/about' element={<About />} />
-              <Route path='/contact' element={<Contact />} />
-              <Route path='/cart' element={<Cart />} />
-              
-            </Routes>
-          </div>
-          <Footer /> */}
         </div>
       </Router>
     </ApolloProvider>

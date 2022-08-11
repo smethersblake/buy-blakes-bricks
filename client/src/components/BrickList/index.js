@@ -48,7 +48,7 @@ function BrickLists() {
                         quantity={bricks.quantity}
                         price={bricks.price}
                         color_id={bricks.color_id}
-
+                        purchaseQuantity={bricks.purchaseQuantity}
                         color_name={bricks.color_name}
                         rgb={bricks.rgb}
                         is_trans={bricks.is_trans}
